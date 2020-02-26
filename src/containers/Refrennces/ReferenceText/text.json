@@ -1,0 +1,9 @@
+[
+    {
+        "firstPara":"The references are for the Department of State and for your summer camp. Your 2 referees need to have known you for over 6 months, can't be a relative and should be one of the following:",
+        "secondPara": "When you request your reference, it will send an email each of your 2 chosen referees. Make sure you let them know to keep an eye out for it!",
+        "thirdPara": "If the status of your reference request does not change to 'completed' within 10 days, please delete the request and try again.",
+        "list":["Employer/Supervisor", "Teacher", "Coach", "Lecturer", "Religious Leader"]
+    }
+]
+
