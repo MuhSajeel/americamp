@@ -1,38 +1,165 @@
-.App {
+/* ---- Header Start--- Css */
+.header-img{
+  width: 110px;
+  height: 50px;
+  margin-left: 100px;
+}
+.header-class{
+  padding: 5px;
+}
+.icons{
+ width: 30px;
+ height: 30px;
+ margin: auto 3px;
+}
+.social-icons{
+  float: right;
+  margin-right: 140px;
+  padding: 10px;
+}
+
+.social-icons .ico{
+  margin:3px;
+}
+
+.special-announcement{
+  background-color: rgb(226, 26, 26);
+  text-align: center;
+}
+.special-announcement #careticonleft{
+  color:white;
+  float: left;
+  margin-top: 3px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.special-announcement #careticonright{
+  color:white;
+  float: right;
+  margin-top: 3px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.special-announcement span{
+  color: white;
+  font-family: 'Oswald';
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin: 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (max-width: 767px) {
+   .social-icons{
+    display: none;
   }
+  .header-img{
+    margin:0;
+  }
+  .header-class {
+    padding: 5px;
+    text-align: center;
+    overflow: hidden;
+}
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* ---- Header End --- Css */
+
+/* ---- Footer Start --- */
+
+.footer-class{
+  background-color: #2d318a;
+  text-align: center;
+  padding:30px 0;
+}
+.footer .row{
+  margin: 0;
+}
+.footer-class h5{
+  color:white;
+  font-family: 'Oswald';
+  font-weight: bold;
+  letter-spacing: 1px;
+
+}
+.footer-class .about{
+border-right: rgb(17, 17, 105) 1px solid;
+}
+.footer-class .contact{
+  border-right: rgb(17, 17, 105) 1px solid;
+}
+
+.footer-class .about p{
   color: white;
+  padding: 20px 120px 0 120px;
+  font-size: 12px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.footer-img{
+  width: 220px;
+    height: 110px;
+    margin-left: 15px;
+}
+.line{
+  margin-left: -5px;
+}
+.footer-class .contact p{
+  color:white;
+  font-size: 12px;
+  padding-top: 20px;
+  margin-bottom:50px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.footer-class .contact span{
+  margin-bottom: 10px;
+}
+.footer-class .contact .ico{
+margin:0 5px 0 5px;
+display: inline-block;
+}
+.ico .social-container .social-svg .social-svg-icon {
+  fill: white !important;
 }
 
-.App-link {
-  color: #61dafb;
+.foot{
+  background-color: #2d318a;
+  text-align: center;
+  padding:30px 0;
+  color:white;
+}
+.foot p{
+  padding-top: 20px;
+  margin: auto 50px;
+  border-top:rgb(17, 17, 105) 1px solid; ;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.white-box{
+  background-color: white;
+  width:50px;
+  height: 50px;
+  border-radius: 5px;
+  margin:7px;
 }
+.boxes{
+  padding: 20px 150px;
+}
+@media screen and (max-width: 767px) {
+.footer-class .about p{
+  padding: 20px 0px 0 0px;
+}
+.footer-img{
+  margin-bottom: 30px;
+}
+.footer-class .social{
+  margin-top: 30px;
+}
+.boxes{
+  padding: 20px 90px;
+}
+.foot p{
+  padding-top: 0;
+  border-top: none;
+}
+}
+
+/* ---- Footer End --- */
