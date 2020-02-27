@@ -1,10 +1,13 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { Component } from 'react'
 import './Login.css';
+import HeaderImage from '../../HeaderImage/Header_Image';
 
 export class Login extends Component {
     render() {
         return (
+            <div>
+            <HeaderImage />
             <div className="row">
             <div className="col-md-1"></div>
             <div className="col-md-4 login"> 
@@ -30,6 +33,7 @@ export class Login extends Component {
             <div className="col-md-4 image">
                 <img src="https://dummyimage.com/600x500/000000/fff"/>
             </div>
+        </div>
         </div>
         )
     }

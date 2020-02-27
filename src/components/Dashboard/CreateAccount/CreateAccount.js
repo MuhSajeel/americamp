@@ -2,10 +2,13 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react'
 import './CreateAccount.css';
+import HeaderImage from '../../HeaderImage/Header_Image';
 
 export class CreateAccount extends Component {
     render() {
         return (
+            <div>
+                <HeaderImage />
             <div className="row">
                 <div className="col-md-1"></div>
                 <div className="col-md-4 createaccount"> 
@@ -56,6 +59,7 @@ export class CreateAccount extends Component {
                 <img className="logo1" src="Assets/Logos/AC logo.png" />
                 <img className="logo2" src="Assets/Logos/Poweredbytea_biscuits.png" />
                 </div>
+            </div>
             </div>
         )
     }

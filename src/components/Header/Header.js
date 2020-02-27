@@ -4,6 +4,7 @@ import { SocialIcon } from 'react-social-icons';
 import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCaretLeft,faCaretRight } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom';
 
 export class Header extends Component {
     render() {
@@ -11,7 +12,9 @@ export class Header extends Component {
             <div className="header">
             <div className="row">
                 <div className="header-class">
+                    <Link to="/">
                 <img className="header-img" src="Assets/Logos/AC logo.png" />
+                </Link>
                 <div className="social-icons">
                     <span className="ico"><SocialIcon network="facebook" /></span>
                     <span className="ico"><SocialIcon network="twitter" /></span>
