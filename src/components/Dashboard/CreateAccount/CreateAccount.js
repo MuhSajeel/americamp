@@ -8,7 +8,7 @@ export class CreateAccount extends Component {
     render() {
         return (
             <div>
-                <HeaderImage />
+            <HeaderImage />
             <div className="row">
                 <div className="col-md-1"></div>
                 <div className="col-md-4 createaccount"> 

@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/alt-text */
 import React, { Component } from 'react'
 import './Login.css';
@@ -21,7 +22,7 @@ export class Login extends Component {
                     <label className="login_label">Password<span className="required">*</span></label>
                     <input type="password" className="form-control" required></input>
                 </div>
-                
+                <p><a href="#" className="lostpwd">Lost Password</a></p>
                 <button type="button" className="button_cont btnlogin">
                     Login
                     <i className="fa fa-angle-right float-right fa-lg"></i>
@@ -30,7 +31,7 @@ export class Login extends Component {
             </div>
             
             <div className="col-md-3"></div>
-            <div className="col-md-4 image">
+            <div className="col-md-4 loginimage">
                 <img src="https://dummyimage.com/600x500/000000/fff"/>
             </div>
         </div>

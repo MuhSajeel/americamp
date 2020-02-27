@@ -1,4 +1,7 @@
 /* ---- Create Account Page Start --- */
+.row{
+  margin:0;
+}
 .createaccount{
     margin:50px auto;
   }
@@ -26,6 +29,7 @@
     width: 350px;
     text-decoration: none;
     padding: 10px;
+    cursor: pointer;
     border-radius: 30px;
     display: inline-block;
     border: none;
@@ -42,7 +46,7 @@
     }
   
     .btnlogin i{
-      margin-top: 7px;
+      margin-top: 0px;
       padding-right: 7px;  }
       
       .image img{
@@ -67,5 +71,9 @@
         .image{
           display: none;
         }
-      }
+        .button_cont{
+          width: 300px;
+        }
+
+    }
   /* ---- Create Account Page End ---- */
