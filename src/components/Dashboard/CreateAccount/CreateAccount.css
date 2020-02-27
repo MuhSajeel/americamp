@@ -1,0 +1,71 @@
+/* ---- Create Account Page Start --- */
+.createaccount{
+    margin:50px auto;
+  }
+  .account_heading{
+    color: #2d318a;
+    font-family: 'Oswald';
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+  }
+  
+  .createaccount_label{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .required{
+    color:red;
+    margin-left: 2px;
+  }
+  
+  .button_cont{
+    color: #fff !important;
+    width: 350px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 30px;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
+    font-family: 'Oswald';
+    margin-top: 20px;
+    font-size: 20pt;
+    font-weight: 800;
+    }
+  
+    .btnlogin{
+      background: #2d318a;
+      margin-bottom: 40px;
+    }
+  
+    .btnlogin i{
+      margin-top: 7px;
+      padding-right: 7px;  }
+      
+      .image img{
+        margin-top:50px;
+        height:500px;
+         width:500px;
+      }
+
+      .image .logo1{
+        width: 200px;
+        height: 90px;
+        margin-left: 10px;
+
+      }
+      .image .logo2{
+        width: 200px;
+        height: 40px;
+        margin-left: 70px;
+      }
+
+      @media screen and (max-width: 767px) {
+        .image{
+          display: none;
+        }
+      }
+  /* ---- Create Account Page End ---- */

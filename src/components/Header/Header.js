@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { Component } from 'react'
 import { SocialIcon } from 'react-social-icons';
+import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCaretLeft,faCaretRight } from '@fortawesome/free-solid-svg-icons'
 

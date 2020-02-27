@@ -1,0 +1,22 @@
+.big-banner{
+    background-image: url("/Assets/Images/AC landing image.png");
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: right top;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .display-2{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 18%;
+    right:18%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Oswald',sans-serif;
+    font-weight: bold;
+    letter-spacing: 3px;
+  }

@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { Component } from 'react'
 import { SocialIcon } from 'react-social-icons';
+import './Footer.css';
 
 export class Footer extends Component {
     render() {
@@ -45,6 +46,7 @@ export class Footer extends Component {
                         <div className="white-box"></div>
                         <div className="white-box"></div>
                         <div className="white-box"></div>
+
                     </div>
 
                 </div>

@@ -1,0 +1,76 @@
+/* ---- Header Start--- Css */
+.header .row{
+    margin-right:0;
+  }
+  .header-img{
+    width: 130px;
+    height: 70px;
+    margin-left: 170px;
+  }
+  .header-class{
+    padding: 5px;
+    width: 100%;
+  }
+  .icons{
+   width: 30px;
+   height: 30px;
+   margin: auto 3px;
+  }
+  .social-icons{
+    float: right;
+    margin-right: 90px;
+    padding: 10px;
+  }
+  
+  .social-icons .ico{
+    margin:3px;
+    cursor: pointer;
+  }
+  
+  .special-announcement{
+    background-color: rgb(226, 26, 26);
+    text-align: center;
+  }
+  .special-announcement #careticonleft{
+    color:white;
+    float: left;
+    margin-top: 1px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .special-announcement #careticonright{
+    color:white;
+    float: right;
+    margin-top: 1px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .special-announcement .announce{
+    color: white;
+    font-family: 'Oswald';
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+  
+  }
+  
+  @media screen and (max-width: 767px) {
+     .social-icons{
+      display: none;
+    }
+    .header-img{
+      margin:0;
+    }
+    .header-class {
+      padding: 5px;
+      text-align: center;
+      overflow: hidden;
+  }
+  .special-announcement .announce{
+    font-size: 13px;
+  }
+  }
+  
+  /* ---- Header End --- Css */
