@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react'
 import './CreateAccount.css';
@@ -12,28 +13,28 @@ export class CreateAccount extends Component {
                 <form>
                     
                     <div className="form-group">
-                        <label className="createaccount_label">First name<span class="required">*</span></label>
+                        <label className="createaccount_label">First name<span className="required">*</span></label>
                         <input type="text" className="form-control" required></input>
                     </div>
                     <div className="form-group">
-                        <label className="createaccount_label">Last name<span class="required">*</span></label>
+                        <label className="createaccount_label">Last name<span className="required">*</span></label>
                         <input type="text" className="form-control" required></input>
                     </div>
                     <div className="form-group">
-                        <label className="createaccount_label">Email address<span class="required">*</span></label>
-                        <input type="text" className="form-control" required></input>
+                        <label className="createaccount_label">Email address<span className="required">*</span></label>
+                        <input type="email" className="form-control" required></input>
                     </div>
                     <div className="form-group">
-                        <label className="createaccount_label">Password<span class="required">*</span></label>
-                        <input type="text" className="form-control" required></input>
+                        <label className="createaccount_label">Password<span className="required">*</span></label>
+                        <input type="password" className="form-control" required></input>
                     </div>
                     <div className="form-group">
-                        <label className="createaccount_label">Password again<span class="required">*</span></label>
-                        <input type="text" className="form-control" required></input>
+                        <label className="createaccount_label">Password again<span className="required">*</span></label>
+                        <input type="password" className="form-control" required></input>
                     </div>
                     <div className="form-group">
                     <label className="createaccount_label">What country are you applying from?<span class="required">*</span></label>
-                        <select class="form-control">
+                        <select className="form-control">
                             <option value="">Choose one</option>
                             <option>1</option>
                             <option>2</option>
@@ -42,15 +43,19 @@ export class CreateAccount extends Component {
                         </select>
                     </div>
 
-                    <button type="button" class="button_cont btnlogin">
+                    <button type="button" className="button_cont btnlogin">
                         Login
-                        <i class="fa fa-angle-right float-right fa-lg"></i>
+                        <i className="fa fa-angle-right float-right fa-lg"></i>
                     </button>
                 </form>
                 </div>
                 
-                <div className="col-md-3"></div>
-                <div className="col-md-4"></div>
+                <div className="col-md-2"></div>
+                <div className="col-md-5 image">
+                <img src="https://dummyimage.com/600x500/000000/fff"/>
+                <img className="logo1" src="Assets/Logos/AC logo.png" />
+                <img className="logo2" src="Assets/Logos/Poweredbytea_biscuits.png" />
+                </div>
             </div>
         )
     }
