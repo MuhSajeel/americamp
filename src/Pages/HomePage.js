@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import HeaderImage from '../components/Header_Image';
+import {Link} from "react-router-dom";
 
 class HomePage extends Component {
     render() {
@@ -15,13 +16,16 @@ class HomePage extends Component {
                                Apply
                                <i class="fa fa-angle-right float-right fa-lg"></i>
                            </button><br />
+                           
+                      <Link to="/signin">
                            <button type="button" class="btn button_cont btnlogin">
                                Login
                                <i class="fa fa-angle-right float-right fa-lg"></i>
                            </button>
+                      </Link>
                   </div>
                   <div class="col-md-5">
-                  <img className="img-fluid" src="https://dummyimage.com/600x500/000000/fff" alt=""/>
+                  <img className="img-fluid homeimage" src="https://dummyimage.com/600x500/000000/fff" alt=""/>
                   </div>
                </div>
             </div>
