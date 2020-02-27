@@ -1,15 +1,90 @@
 .App{
   background-image: url("/Assets/Images/BG.png");
+  transition: 0.3;
   background-size: cover;
   position: relative;
 }
+/* ---- Header Start--- Css */
+.header .row{
+  margin-right:0;
+}
+.header-img{
+  width: 130px;
+  height: 70px;
+  margin-left: 100px;
+}
+.header-class{
+  padding: 5px;
+  width: 100%;
+}
+.icons{
+ width: 30px;
+ height: 30px;
+ margin: auto 3px;
+}
+.social-icons{
+  float: right;
+  margin-right: 90px;
+  padding: 10px;
+}
 
-/* Header */
+.social-icons .ico{
+  margin:3px;
+  cursor: pointer;
+}
+
+.special-announcement{
+  background-color: rgb(226, 26, 26);
+  text-align: center;
+}
+.special-announcement #careticonleft{
+  color:white;
+  float: left;
+  margin-top: 1px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.special-announcement #careticonright{
+  color:white;
+  float: right;
+  margin-top: 1px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.special-announcement .announce{
+  color: white;
+  font-family: 'Oswald';
+  font-size: 15px;
+  letter-spacing: 2px;
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+@media screen and (max-width: 767px) {
+   .social-icons{
+    display: none;
+  }
+  .header-img{
+    margin:0;
+  }
+  .header-class {
+    padding: 5px;
+    text-align: center;
+    overflow: hidden;
+}
+}
+
+/* ---- Header End --- Css */
+
+/* Header Image */
 
 .big-banner{
-  background-image: url("/Assets/Images/header.jpg");
+  background-image: url("/Assets/Images/AC landing image.png");
 
   /* Position and center the image to scale nicely on all screens */
+  background-position: right top;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -23,10 +98,12 @@
   right:18%;
   transform: translate(-50%, -50%);
   color: white;
-  font-family: 'Oswald';
-  font-weight: 700;
+  font-family: 'Oswald',sans-serif;
+  font-weight: bold;
   letter-spacing: 3px;
 }
+
+/* Header Image End */
 
 /* Home Page */
 
@@ -66,3 +143,115 @@ font-weight: 800;
   font-weight: 800;
   letter-spacing: 2px;
 }
+.homeimage{
+ margin-bottom: 80px;
+}
+/* Home Page End */
+
+/* ---- Footer Start --- */
+
+.footer-class{
+  background-color: #2d318a;
+  text-align: center;
+  padding:30px 0;
+}
+.footer .row{
+  margin: 0;
+}
+.footer-class h5{
+  color:white;
+  font-family: 'Oswald';
+  font-weight: bold;
+  letter-spacing: 1px;
+
+}
+.footer-class .about{
+border-right: rgb(17, 17, 105) 1px solid;
+}
+.footer-class .contact{
+  border-right: rgb(17, 17, 105) 1px solid;
+}
+
+.footer-class .about p{
+  color: white;
+  padding: 20px 100px 0 100px;
+  font-size: 14px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.footer-img{
+  width: 220px;
+    height: 110px;
+    margin-left: 15px;
+}
+.line{
+  margin-left: -5px;
+}
+.footer-class .contact p{
+  color:white;
+  font-size: 14px;
+  padding-top: 20px;
+  margin-bottom:50px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.footer-class .contact span{
+  margin-bottom: 10px;
+}
+.footer-class .contact .ico{
+margin:0 5px 0 5px;
+display: inline-block;
+cursor: pointer;
+}
+.footer-class .contact .social-icons{
+  margin-right: 120px;
+}
+.ico .social-container .social-svg .social-svg-icon {
+  fill: white !important;
+}
+
+.foot{
+  background-color: #2d318a;
+  text-align: center;
+  padding:30px 0;
+  font-size: 14px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color:white;
+}
+.foot p{
+  padding-top: 20px;
+  margin: auto 50px;
+  font-size: 14px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: white;
+  border-top:rgb(17, 17, 105) 1px solid; ;
+}
+
+.white-box{
+  background-color: white;
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+  margin:7px;
+}
+.boxes{
+  padding: 20px 80px 0 110px;
+}
+@media screen and (max-width: 767px) {
+.footer-class .about p{
+  padding: 20px 0px 0 0px;
+}
+.footer-img{
+  margin-bottom: 30px;
+}
+.footer-class .social{
+  margin-top: 30px;
+}
+.boxes{
+  padding: 20px 40px 0 50px;
+}
+.foot p{
+  padding-top: 0;
+  border-top: none;
+}
+}
+
+/* ---- Footer End --- */
