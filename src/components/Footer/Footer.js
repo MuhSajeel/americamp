@@ -2,13 +2,14 @@
 import React, { Component } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { SocialIcon } from 'react-social-icons';
+import './Footer.css';
 
 export class Footer extends Component {
     render() {
         return (
-            <div class="footer">
-            <div class="row footer-class">
-                <div class="col-md-4 about">
+            <div className="footer">
+            <div className="row footer-class">
+                <div className="col-md-4 about">
                     <h5>ABOUT US</h5>
                     <img src="Assets/Images/line.jpg" />
                     <p>© AmeriCamp Ltd, Registered in
@@ -17,9 +18,9 @@ export class Footer extends Component {
                         trademark. UK00003121039 &
                         EU016524324. All rights reserved.
                     </p>
-                    <img class="footer-img" src="Assets/Images/AC_logo.jpg" />
+                    <img className="footer-img" src="Assets/Images/AC_logo.jpg" />
                 </div>
-                <div class="col-md-4 contact">
+                <div className="col-md-4 contact">
                     <h5>CONTACT US</h5>
                     <img src="Assets/Images/line.jpg" />
                     <p>
@@ -29,29 +30,29 @@ export class Footer extends Component {
                         Lane Salford M5 3LW</span>
                     </p>
                   
-                    <span class="ico"><SocialIcon network="facebook" /></span>
-                    <span class="ico"><SocialIcon network="twitter" /></span>
-                    <span class="ico"><SocialIcon network="youtube" /></span>
-                    <span class="ico"><SocialIcon network="instagram"/></span>
+                    <span className="ico"><SocialIcon network="facebook" /></span>
+                    <span className="ico"><SocialIcon network="twitter" /></span>
+                    <span className="ico"><SocialIcon network="youtube" /></span>
+                    <span className="ico"><SocialIcon network="instagram"/></span>
                
                 </div>
-                <div class="col-md-4 social">
+                <div className="col-md-4 social">
                     <h5>SOCIAL</h5>
                     <img src="Assets/Images/line.jpg" />
 
-                    <div class="row boxes">
-                        <div class="white-box"></div>
-                        <div class="white-box"></div>
-                        <div class="white-box"></div>
-                        <div class="white-box"></div>
-                        <div class="white-box"></div>
-                        <div class="white-box"></div>
+                    <div className="row boxes">
+                        <div className="white-box"></div>
+                        <div className="white-box"></div>
+                        <div className="white-box"></div>
+                        <div className="white-box"></div>
+                        <div className="white-box"></div>
+                        <div className="white-box"></div>
 
                     </div>
 
                 </div>
             </div>
-            <div class="foot">
+            <div className="foot">
                 <p>© AmeriCamp.co.uk 2020</p>
             </div>
             </div>
