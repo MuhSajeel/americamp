@@ -1,0 +1,35 @@
+import {
+  AMERICAMP_PHONE_NUMBER,
+  EMAIL_PAGE,
+  FACEBOOK_PAGE,
+  FAQ,
+  FB_CHAT,
+  INSTAGRAM_PAGE,
+  SMS,
+  SNAPCHAT_PAGE,
+  TERMS_CONDITION,
+  TWITTER_PAGE,
+  WHATSAPP_PAGE,
+  YOUTUBE_PAGE,
+  YOUTUBE_URL,
+} from '../../../constants';
+
+export const UrlLinks = {
+  android_url:
+    'https://play.google.com/store/apps/details?id=com.mobisystems.msdict.embedded.wireless.oxford.dictionaryofenglish&hl=en',
+  email_page: EMAIL_PAGE,
+  facebook_page: FACEBOOK_PAGE,
+  faq: FAQ,
+  instagram_page: INSTAGRAM_PAGE,
+  ios_url: 'https://apps.apple.com/us/app/oxford-dictionary-of-english/id978674211',
+  snapchat_page: SNAPCHAT_PAGE,
+  terms_and_conditions: TERMS_CONDITION,
+  twitter_page: TWITTER_PAGE,
+  whatsapp_page: WHATSAPP_PAGE,
+  youtube_page: YOUTUBE_PAGE,
+  youtube_url: YOUTUBE_URL,
+  americamp_phone_number: AMERICAMP_PHONE_NUMBER,
+  fb_chat: FB_CHAT,
+  sms: SMS,
+  feedback_page: EMAIL_PAGE,
+};
