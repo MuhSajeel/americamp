@@ -1,0 +1,45 @@
+.homepage{
+    padding-top: 100px;
+  }
+  .button_cont{
+  color: #fff !important;
+  width: 350px;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 30px;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+  font-family: 'Oswald';
+  margin-top: 20px;
+  font-size: 20pt;
+  font-weight: 800;
+  }
+  .btnapply{
+    margin-top: 80px;
+    background: #e31b24;
+  }
+  .btnlogin{
+    background: #2d318a;
+    margin-bottom: 80px;
+  }
+  .button_cont i {
+    padding: 6px;
+  }
+  
+  .homepage b{
+    color: #2d318a;
+    font-family: 'Oswald';
+    font-size: 36pt;
+    font-weight: 800;
+    letter-spacing: 2px;
+  }
+  .homeimage{
+   margin-bottom: 80px;
+  }
+
+  @media screen and (max-width: 767px) {
+  .homepage b{
+    font-size: 20pt;
+  }
+  }

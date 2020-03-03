@@ -1,0 +1,84 @@
+/* ---- Login Page Start --- */
+.login{
+    margin:100px auto;
+  }
+  .login_heading{
+    color: #2d318a;
+    font-family: 'Oswald';
+    font-size: 42pt;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-weight: 600;
+  }
+
+  .createaccountform{
+    margin-top: 40px;
+  }
+  
+  .login_label{
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .required{
+    color:red;
+    margin-left: 2px;
+  }
+  
+  .button_cont{
+    color: #fff !important;
+    width: 350px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
+    font-family: 'Oswald';
+    margin-top: 20px;
+    font-size: 20pt;
+    font-weight: 800;
+    }
+  
+    .btnlogin{
+      background: #2d318a;
+      margin-bottom: 40px;
+    }
+  
+    .btnlogin i{
+      margin-top: 0px;
+      padding-right: 7px;
+    }
+
+    .lostpwd{
+      color:#ed1b24;
+      font-family: sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+     }
+
+    .loginimage img{
+      margin-top:90px;
+      height:500px;
+       width:500px;
+    }
+    @media screen and (max-width: 767px) {
+      .loginimage img{
+        display: none;
+      }
+      .login .loginheading{
+        text-align: center;
+      }
+      .button_cont{
+        width: -webkit-fill-available !important;
+      }
+      .login_heading{
+        font-size: 31px;
+      }
+      .login_label{
+        font-size: 20px;
+      }
+    }
+  /* ---- Login Page End ---- */

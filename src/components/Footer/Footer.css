@@ -1,0 +1,113 @@
+/* ---- Footer Start --- */
+
+.footer-class{
+    background-color: #2d318a;
+    text-align: center;
+    padding:30px 0;
+  }
+  .footer .row{
+    margin: 0;
+  }
+  .footer-class h5{
+    color:white;
+    font-family: 'Oswald';
+    font-weight: bold;
+    letter-spacing: 1px;
+  
+  }
+  .footer-class .about{
+  border-right: rgb(17, 17, 105) 1px solid;
+  }
+  .footer-class .contact{
+    border-right: rgb(17, 17, 105) 1px solid;
+  }
+  
+  .footer-class .about p{
+    color: white;
+    padding: 20px 100px 0 100px;
+    font-size: 14px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  }
+  .footer-img{
+    width: 220px;
+      height: 110px;
+      margin-left: 15px;
+  }
+  .line{
+    margin-left: -5px;
+  }
+  .footer-class .contact p{
+    color:white;
+    font-size: 14px;
+    padding-top: 20px;
+    margin-bottom:50px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  }
+  .footer-class .contact span{
+    margin-bottom: 10px;
+  }
+  .footer-class .contact .ico{
+  margin:0 5px 0 5px;
+  display: inline-block;
+  cursor: pointer;
+  }
+  .footer-class .contact .social-icons{
+    margin-right: 120px;
+  }
+  .ico .social-container .social-svg .social-svg-icon {
+    fill: white !important;
+  }
+  
+  .foot{
+    background-color: #2d318a;
+    text-align: center;
+    padding:30px 0;
+    font-size: 14px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color:white;
+  }
+  .foot p{
+    padding-top: 20px;
+    margin: auto 50px;
+    font-size: 14px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: white;
+    border-top:rgb(17, 17, 105) 1px solid; ;
+  }
+  
+  .white-box{
+    background-color: white;
+    width: 110px;
+    height: 100px;
+    border-radius: 10px;
+    margin: 7px;
+  }
+  .boxes{
+    padding: 20px 0px 0px 65px;
+  }
+  @media screen and (max-width: 767px) {
+  .footer-class .about p{
+    padding: 20px 0px 0 0px;
+  }
+  .footer-img{
+    margin-bottom: 30px;
+  }
+  .footer-class .social{
+    margin-top: 30px;
+  }
+  .white-box{
+    width: 70px;
+    height: 70px;
+  }
+  .boxes{
+    padding: 30px;
+    justify-content: center;
+  }
+  .foot p{
+    padding-top: 0;
+    border-top: none;
+  }
+  }
+  
+  /* ---- Footer End --- */
+  
