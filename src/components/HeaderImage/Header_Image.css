@@ -2,6 +2,9 @@
     background-image: url("/Assets/Images/AC landing image.png");
   
     /* Position and center the image to scale nicely on all screens */
+	   height: 630px;
+     width: 100%;
+     padding-top: 150px;
     background-position: right top;
     background-position: center center;
     background-repeat: no-repeat;
@@ -19,4 +22,8 @@
     font-family: 'Oswald',sans-serif;
     font-weight: bold;
     letter-spacing: 3px;
+  }
+  .responsive {
+    width: 100%;
+    height: auto;
   }
