@@ -1,3 +1,4 @@
+
 /* eslint-disable no-unused-vars */
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
@@ -9,6 +10,7 @@ import LostPassword from './components/Dashboard/LostPassword/LostPassword'
 class RouteViews extends Component {
     render() {
         return (
+
             <div className="App">
             <Switch>
             <Route path="/" exact  component={HomePage} />

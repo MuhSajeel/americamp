@@ -6,7 +6,8 @@ class Header extends Component {
         return (
             <div className="jumbotron big-banner mb-0 jumbotron-fluid">
                     <strong className="display-2 text-light">Welcome to AmeriCamp!</strong>
-                </div>
+            </div>
+
         );
     }
 }

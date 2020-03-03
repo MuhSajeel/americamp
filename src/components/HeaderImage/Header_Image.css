@@ -1,6 +1,5 @@
 .big-banner{
     background-image: url("/Assets/Images/AC landing image.png");
-  
     /* Position and center the image to scale nicely on all screens */
     background-position: right top;
     background-position: center center;
@@ -8,10 +7,12 @@
     background-size: cover;
     position: relative;
   }
+
   .jumbotron{
     height: 630px;
     padding-top: 150px;
   }
+
   .display-2{
     text-align: center;
     position: relative;

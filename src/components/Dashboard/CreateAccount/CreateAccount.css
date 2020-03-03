@@ -1,4 +1,5 @@
 /* ---- Create Account Page Start --- */
+
 .row{
   margin:0;
 }
@@ -51,6 +52,7 @@
     }
   
     .btnlogin i{
+
       margin-top: 0px;
       padding-right: 7px;  }
       
