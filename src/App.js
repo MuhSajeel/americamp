@@ -10,7 +10,7 @@ function App() {
     <Router>
      <Fragment>
        <Header/>
-         <RouteViews/>
+          <RouteViews/>
        <Footer/>
      </Fragment>
   </Router>

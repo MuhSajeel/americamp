@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import HomePage from './components/Dashboard/HomePage/HomePage';
 import CreateAccount from './components/Dashboard/CreateAccount/CreateAccount';
 import Login from './components/Dashboard/Login/Login';
+import LostPassword from './components/Dashboard/LostPassword/LostPassword'
 
 class RouteViews extends Component {
     render() {
@@ -13,6 +14,7 @@ class RouteViews extends Component {
             <Route path="/" exact  component={HomePage} />
             <Route path="/CreateAccount"  component={CreateAccount} />
             <Route path="/Login"  component={Login} />
+            <Route path="/LostPassword"  component={LostPassword} />
             </Switch>
             </div>
         );
