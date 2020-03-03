@@ -7,6 +7,7 @@ class Header extends Component {
             <div className="jumbotron big-banner mb-0 jumbotron-fluid">
                     <strong className="display-2 text-light">Welcome to AmeriCamp!</strong>
             </div>
+
         );
     }
 }

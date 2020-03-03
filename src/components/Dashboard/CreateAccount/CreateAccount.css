@@ -1,18 +1,27 @@
 /* ---- Create Account Page Start --- */
+
+.row{
+  margin:0;
+}
 .createaccount{
-    margin:50px auto;
+    margin:100px auto;
   }
+  .createaccountform{
+    margin-top: 40px;
+  }
+
   .account_heading{
     color: #2d318a;
     font-family: 'Oswald';
-    font-weight: bold;
+    font-size: 40pt;
+    font-weight: 800;
     letter-spacing: 2px;
-    margin-bottom: 40px;
+    font-weight: 600;
   }
   
   .createaccount_label{
     font-family: sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
   }
   
@@ -26,6 +35,7 @@
     width: 350px;
     text-decoration: none;
     padding: 10px;
+    cursor: pointer;
     border-radius: 30px;
     display: inline-block;
     border: none;
@@ -42,19 +52,20 @@
     }
   
     .btnlogin i{
-      margin-top: 7px;
+
+      margin-top: 0px;
       padding-right: 7px;  }
       
       .image img{
-        margin-top:50px;
-        height:500px;
-         width:500px;
+        margin-top:100px;
+        height:600px;
+         width:600px;
       }
 
       .image .logo1{
-        width: 200px;
-        height: 90px;
-        margin-left: 10px;
+        width: 220px;
+        height: 100px;
+        margin-left: 50px;
 
       }
       .image .logo2{
@@ -67,5 +78,18 @@
         .image{
           display: none;
         }
-      }
+        .createaccount p{
+          text-align: center;
+        }
+        .button_cont{
+          width: -webkit-fill-available !important;
+        }
+        .account_heading{
+          font-size: 25px;
+        }
+        .createaccount_label{
+          font-size: 20px;
+        }
+
+    }
   /* ---- Create Account Page End ---- */

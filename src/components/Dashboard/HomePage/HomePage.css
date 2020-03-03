@@ -37,3 +37,9 @@
   .homeimage{
    margin-bottom: 80px;
   }
+
+  @media screen and (max-width: 767px) {
+  .homepage b{
+    font-size: 20pt;
+  }
+  }

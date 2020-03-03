@@ -1,16 +1,18 @@
 .big-banner{
     background-image: url("/Assets/Images/AC landing image.png");
-  
     /* Position and center the image to scale nicely on all screens */
-	   height: 630px;
-     width: 100%;
-     padding-top: 150px;
     background-position: right top;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
   }
+
+  .jumbotron{
+    height: 630px;
+    padding-top: 150px;
+  }
+
   .display-2{
     text-align: center;
     position: relative;
@@ -23,7 +25,19 @@
     font-weight: bold;
     letter-spacing: 3px;
   }
-  .responsive {
-    width: 100%;
-    height: auto;
+
+  @media screen and (max-width: 767px) {
+    .jumbotron{
+      height: auto;
+      padding-top: 150px;
+    }
+    .display-2{
+      text-align: center;
+      position: absolute;
+      font-size: 42px;
+      top: 30%;
+      left: 0;
+      right: 0;
+      transform: none;
+    }
   }
