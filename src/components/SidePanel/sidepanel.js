@@ -6,8 +6,7 @@ import './sidepanel.css';
 export class sidepanel extends Component {
     render() {
         return (
-            <div className="row"> 
-                <div class="col-md-2">
+                <div class="col-md-2 sidepanel">
                     <p className="welcome">Welcome! <i class="fa fa-bell"></i></p>
                     <p className="applicant_name">Applicant Name</p>
                     <p><img className="profile-img" src="Assets/Icons/profile-image-png-10.png" /></p>
@@ -18,7 +17,7 @@ export class sidepanel extends Component {
                         <a href="#">Log Out</a>
                     </div>
                 </div>
-            </div>
+
         )
     }
 }

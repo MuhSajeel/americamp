@@ -30,15 +30,17 @@ margin-bottom: 50px;
 }
 .fa-bell{
     color:#ed1b24;
-margin-left: 60px;
+    position: absolute;
+    left: 200px;
+    top: 7px;
 }
 .profile-img{
     width: 130px;
     height: 130px;
 }
 
-@media screen and (max-width: 767px) {
 
+@media screen and (max-width: 767px) {
     .profile-img{
         width: 70px;
         height: 70px;
@@ -46,8 +48,9 @@ margin-left: 60px;
         top: 30px;
         position: absolute;
     }
+    
     .sidepanel{
         display: none;
     }
-
+   
 }
