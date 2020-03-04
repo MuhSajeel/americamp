@@ -1,6 +1,6 @@
-import firebase from 'react-native-firebase';
+// import firebase from 'react-firebase';
 
-export const getFcmToken = async () => {
-  const fcmToken = await firebase.messaging().getToken();
-  return fcmToken;
-};
+// export const getFcmToken = async () => {
+//   const fcmToken = await firebase.messaging().getToken();
+//   return fcmToken;
+// };

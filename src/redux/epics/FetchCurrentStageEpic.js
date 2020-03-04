@@ -1,5 +1,5 @@
 /* eslint-disable camelcase */
-import { Alert } from 'react-native';
+ 
 import { switchMap, filter } from 'rxjs/operators';
 
 import { inputChanged as isCurrentStageFetched } from '../actions';
@@ -49,7 +49,7 @@ export class FetchCurrentStageEpic {
         } catch (error) {
           // eslint-disable-next-line no-console
           console.log('Fetch Error', error);
-          Alert.alert(UNKNOWN_ERROR_MSG);
+          // Alert.alert(UNKNOWN_ERROR_MSG);
           return isCurrentStageFetched(null, FETCH_CURRENT_STAGE_OF_USER_FAILURE);
         }
       })

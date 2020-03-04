@@ -1,5 +1,5 @@
 /* eslint-disable camelcase */
-import { Alert } from 'react-native';
+ 
 import { switchMap, filter } from 'rxjs/operators';
 
 import { inputChanged as stageProgressFetchedAction } from '../actions';
@@ -34,22 +34,22 @@ export class StagesCompletenessEpic {
               setItem(`@${stage}`, JSON.stringify(resObj.data.completeness));
               return stageProgressFetchedAction(stagesProgress, actionType);
             }
-            Alert.alert(NETWORK_ERROR_MSG);
+            // Alert.alert(NETWORK_ERROR_MSG);
             return stageProgressFetchedAction(payload, FETCH_STAGES_PROGRESS_FAILURE);
           }
           if (status && (status === 401 || status === 422 || status === 512)) {
             return stageProgressFetchedAction(payload, FETCH_STAGES_PROGRESS_FAILURE);
           }
           if (problem && problem === NETWORK_ERROR_MSG) {
-            Alert.alert(NETWORK_ERROR_MSG);
+            // Alert.alert(NETWORK_ERROR_MSG);
             return stageProgressFetchedAction(payload, FETCH_STAGES_PROGRESS_FAILURE);
           }
-          Alert.alert(ERROR_MSG);
+          // Alert.alert(ERROR_MSG);
           return stageProgressFetchedAction(payload, FETCH_STAGES_PROGRESS_FAILURE);
         } catch (error) {
           // eslint-disable-next-line no-console
           console.log('Sign Up Unknown Error', error);
-          Alert.alert(UNKNOWN_ERROR_MSG);
+          // Alert.alert(UNKNOWN_ERROR_MSG);
           return stageProgressFetchedAction(payload, FETCH_STAGES_PROGRESS_FAILURE);
         }
       })

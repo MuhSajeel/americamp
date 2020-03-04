@@ -20,7 +20,7 @@ import { ADDITIONAL_INFO_CHANGED } from '../../../../constants';
 class YesBackground extends Component {
   infoSubmit() {
     if (this.props.extra_detail.length < 250) {
-      return SimpleToast.show('Must enter at least 250 characters');
+      return Simple//Toast.show('Must enter at least 250 characters');
     }
     const data = this.props.fetchedUserProfile;
     data.educational_background = this.props.educationReducer;

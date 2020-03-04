@@ -1,5 +1,5 @@
 /* eslint-disable camelcase */
-import { Alert } from 'react-native';
+ 
 import { switchMap, filter } from 'rxjs/operators';
 
 import { inputChanged } from '../actions';
@@ -43,7 +43,7 @@ export class RatingEpic {
         } catch (error) {
           // eslint-disable-next-line no-console
           console.log('Fetch Error', error);
-          Alert.alert(UNKNOWN_ERROR_MSG);
+          // Alert.alert(UNKNOWN_ERROR_MSG);
           return inputChanged(null, FETCH_RATING_FAILURE);
         }
       })

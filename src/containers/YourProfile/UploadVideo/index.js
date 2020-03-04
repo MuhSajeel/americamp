@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import { View, Image, TouchableOpacity, TextInput, Dimensions, Linking } from 'react-native';
 import { connect } from 'react-redux';
-import Toast from 'react-native-simple-toast';
+//import Toast from 'react-native-simple-toast';
 import ImagePicker from 'react-native-image-picker';
 import * as Progress from 'react-native-progress';
 import { Heading, SubHeading, Screen, FooterWithButtons } from '../../../components/common';
@@ -53,7 +53,7 @@ class UploadVideo extends Component {
   abortVideoUpload() {
     const { uploadVideoFailure } = this.props;
     this.UploadVideo.abort();
-    Toast.show(UPLOAD_VIDEO_CANCELLED);
+    //Toast.show(UPLOAD_VIDEO_CANCELLED);
     uploadVideoFailure();
   }
 
@@ -148,7 +148,7 @@ class UploadVideo extends Component {
               uri && !uploading && !loading
                 ? () => {
                     if (!isValidUri(uri)) {
-                      return Toast.show('Please Enter Valid url');
+                      return //Toast.show('Please Enter Valid url');
                     }
                     return this.saveUrl();
                   }

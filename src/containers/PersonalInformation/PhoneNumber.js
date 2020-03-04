@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Platform, Alert } from "react-native";
+import { View, Platform } from "react-native";
 import { connect } from "react-redux";
 
 import {
@@ -39,8 +39,8 @@ class PhoneNumber extends Component {
     console.log("Number ", num);
 
     if (dial[0] !== "+" || dial.length < 2)
-      return Alert.alert("Invalid Dial Code!");
-    if (number.length < 10) return Alert.alert("Invalid Phone Number!");
+      //return Alert.alert("Invalid Dial Code!");
+    if (number.length < 10) //return Alert.alert("Invalid Phone Number!");
     return (
       this.props.inputChanged(num, CNUMBER_CHANGED),
       this.props.navigation.navigate(DRIVER_LICENSE)

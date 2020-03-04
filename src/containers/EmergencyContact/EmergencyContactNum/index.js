@@ -158,11 +158,11 @@ class EmergencyContactNum extends Component {
                         EmergencyContact.contact.info.contact_email
                       )
                     ) {
-                      Toast.show(ENTER_VALID_EMAIL);
+                      //Toast.show(ENTER_VALID_EMAIL);
                     } else if (
                       EmergencyContact.contact.info.mobile_number.length < 10
                     ) {
-                      Toast.show(VALID_PHONE_NUM);
+                      //Toast.show(VALID_PHONE_NUM);
                     } else {
                       navigate(KIN_DETAILS);
                     }

@@ -1,6 +1,6 @@
 /* eslint-disable camelcase */
 import React, { Component } from 'react';
-import { View, Text, Linking, Platform, Share, Alert } from 'react-native';
+import { View, Text, Linking, Platform, Share } from 'react-native';
 import { connect } from 'react-redux';
 import { AirbnbRating } from 'react-native-elements';
 

@@ -62,7 +62,7 @@ class ChildrenExperience extends Component {
               exp_with_childern
                 ? () => {
                     if (exp_with_childern.length < 250) {
-                      return SimpleToast.show('Must enter at least 250 characters');
+                      return Simple//Toast.show('Must enter at least 250 characters');
                     }
                     return navigate(EMPLOYMENT_AND_VOLUNTEER_HISTORY);
                   }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Dimensions, Alert } from 'react-native';
+import { View, Dimensions } from 'react-native';
 import Image from 'react-native-image-progress';
 import * as Progress from 'react-native-progress';
 import { connect } from 'react-redux';
@@ -80,22 +80,22 @@ class ViewDocuments extends Component {
       name === 'additional_documents' ||
       (name !== 'additional_documents' && length > 1)
     ) {
-      return Alert.alert('Delete', 'Are You Sure?', [
-        {
-          text: 'Yes',
-          onPress: () => this.deleteDocument(i, name)
-        },
-        { text: 'No' }
-      ]);
+      // return Alert.alert('Delete', 'Are You Sure?', [
+      //   {
+      //     text: 'Yes',
+      //     onPress: () => this.deleteDocument(i, name)
+      //   },
+      //   { text: 'No' }
+      // ]);
     }
-    return Alert.alert(
-      'You must keep atleast one.',
-      'Although you can replace?',
-      [
-        { text: 'Yes', onPress: () => this.props.navigation.navigate(route) },
-        { text: 'No' }
-      ]
-    );
+    // return Alert.alert(
+    //   'You must keep atleast one.',
+    //   'Although you can replace?',
+    //   [
+    //     { text: 'Yes', onPress: () => this.props.navigation.navigate(route) },
+    //     { text: 'No' }
+    //   ]
+    // );
   }
 
   render() {

@@ -1,11 +1,11 @@
-import { Alert } from "react-native";
+import { Alert } from "react";
 import { switchMap } from "rxjs/operators";
 import { ofType } from "redux-observable";
 
 import { logoutActionSuccess, logoutActionFailure } from "../actions";
 import { setItem, clear } from "../../helpers/Localstorage";
 import { LOGOUT, LOGIN_NAV, UNKNOWN_ERROR_MSG } from "../../constants";
-import NavigationService from "../../navigator/Navigation";
+//import NavigationService from "../../navigator/Navigation";
 import { RestClient } from "../../network/RestClient";
 
 export class LogoutEpic {
@@ -13,7 +13,7 @@ export class LogoutEpic {
     action$.pipe(
       ofType(LOGOUT),
       switchMap(async () => {
-        NavigationService.navigate(LOGIN_NAV);
+        //NavigationService.navigate(LOGIN_NAV);
         try {
           await clear();
           await setItem("reduceOnboarding", "reduceOnboarding");

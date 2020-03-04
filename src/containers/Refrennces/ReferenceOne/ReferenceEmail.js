@@ -3,7 +3,7 @@ import React from 'react';
 import { View, Text, Platform } from 'react-native';
 import { Icon } from 'react-native-elements';
 import { connect } from 'react-redux';
-import Toast from 'react-native-simple-toast';
+//import Toast from 'react-native-simple-toast';
 import { referenceOneEmail } from '../../../redux/actions';
 
 import { Screen, FooterWithButtons, Heading, Input, SubHeading } from '../../../components/common';
@@ -54,13 +54,13 @@ const ReferenceName = ({ navigation, referenceOneEmail, email, status, emailRedu
               ? () => {
                 if (validateEmail(email)) {
                   if (emailReducer.email === email) {
-                    Toast.show(DO_NOT_ENTER_SAME_EMAIL);
+                    //Toast.show(DO_NOT_ENTER_SAME_EMAIL);
                   }
                   if (emailReducer.email !== email) {
                     navigate(REFERENCE_TWO_NAME);
                   }
                 } else {
-                  Toast.show(ENTER_VALID_EMAIL);
+                  //Toast.show(ENTER_VALID_EMAIL);
                 }
               }
               : null

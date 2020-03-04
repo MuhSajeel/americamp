@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Text, Alert } from "react-native";
+import { View, Text } from "react-native";
 
 import { connect } from "react-redux";
 import Toast from "react-native-simple-toast";
@@ -63,7 +63,7 @@ class KinContactNum extends Component {
       data.emergency_contact = this.props.EmergencyContact;
       this.props.infoSubmited(data);
     } else {
-      Toast.show("Please Enter Valid Email");
+      //Toast.show("Please Enter Valid Email");
     }
   }
 
@@ -170,11 +170,11 @@ class KinContactNum extends Component {
                           EmergencyContact.next_of_kin.info.contact_email
                         )
                       ) {
-                        Toast.show(ENTER_VALID_EMAIL);
+                        //Toast.show(ENTER_VALID_EMAIL);
                       } else if (
                         EmergencyContact.next_of_kin.info.home_phone.length < 10
                       ) {
-                        Toast.show(VALID_PHONE_NUM);
+                        //Toast.show(VALID_PHONE_NUM);
                       } else {
                         this.infoSubmit();
                       }

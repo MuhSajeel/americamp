@@ -6,8 +6,8 @@ const DOCUMENTS_INITIAL_STATE = USER_PROFILE.documents;
 
 export default (state = DOCUMENTS_INITIAL_STATE, action) => {
   switch (action.type) {
-    case CONSTANTS.PHOTOGRAPH_UPLOAD_CHANGED || CONSTANTS.UPLOAD_IMAGE_SUCCESS:
-      return { ...state, photograph_upload: action.payload };
+    //case CONSTANTS.PHOTOGRAPH_UPLOAD_CHANGED || CONSTANTS.UPLOAD_IMAGE_SUCCESS:
+    //  return { ...state, photograph_upload: action.payload };
     case CONSTANTS.POLICE_BACKGROUND_CHANGED:
       return { ...state, police_background_check: action.payload };
     case CONSTANTS.CAMP_CONTRACT_CHANGED:
