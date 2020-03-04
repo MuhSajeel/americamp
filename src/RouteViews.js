@@ -7,6 +7,8 @@ import CreateAccount from './components/Dashboard/CreateAccount/CreateAccount';
 import Login from './components/Dashboard/Login/Login';
 import LostPassword from './components/Dashboard/LostPassword/LostPassword'
 import SettingsMain from './components/Dashboard/SettingsMain/SettingsMain'
+import TermsandConditions from './components/Dashboard/TermsandConditions/termsandconditions'
+import ResetPassword from './components/Dashboard/ResetPassword/resetpassword'
 
 class RouteViews extends Component {
     render() {
@@ -18,7 +20,9 @@ class RouteViews extends Component {
             <Route path="/CreateAccount"  component={CreateAccount} />
             <Route path="/Login"  component={Login} />
             <Route path="/LostPassword"  component={LostPassword} />
-            <Route path="/SettingsMain"  component={SettingsMain} />
+            <Route path="/settingsmain"  component={SettingsMain} />
+            <Route path="/termsandconditions"  component={TermsandConditions} />
+            <Route path="/resetpassword"  component={ResetPassword} />
             </Switch>
             </div>
         );

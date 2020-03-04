@@ -29,7 +29,7 @@ export class SettingsMain extends Component {
                         <b className="resetpass">Reset Password</b>
                         </div>
                         <div className="col-md-5 maincontent2">
-                        <Link to="/LostPassword" className="view_cont btnview">
+                        <Link to="/resetpassword" className="view_cont btnview">
                          View
                         <i className="fa fa-angle-right float-right fa-lg"></i>
                         </Link>
@@ -42,7 +42,7 @@ export class SettingsMain extends Component {
                         <b className="resetpass">View Terms and Conditions</b>
                         </div>
                         <div className="col-md-5 maincontent2">
-                        <Link to="/LostPassword" className="view_cont btnview">
+                        <Link to="/termsandconditions" className="view_cont btnview">
                          View
                         <i className="fa fa-angle-right float-right fa-lg"></i>
                         </Link>
