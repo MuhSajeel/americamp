@@ -3,7 +3,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react'
 import './SettingsMain.css';
-
+import { Link } from 'react-router-dom';
+import Sidepanel from '../../SidePanel/sidepanel'
 export class SettingsMain extends Component {
    
     render() {
@@ -37,17 +38,9 @@ export class SettingsMain extends Component {
                     <b className="display-3 setting_heading">Settings</b>
                     </p> 
                     </div>
-                </div>      
-                <div class="col-md-2 sidepanel">
-                    <p className="welcome">Welcome! <i class="fa fa-bell"></i></p>
-                    <p className="applicant_name">Applicant Name</p>
-                    <p><img className="profile-img" src="Assets/Icons/profile-image-png-10.png" /></p>
-
-                    <div className="sidebar">
-                        <a href="#">Home</a>
-                        <a href="#">Settings</a>
-                        <a href="#">Log Out</a>
-                    </div>
+                </div>    
+                <div className="col-md-2 sidepanel">
+                <Sidepanel/>
                 </div>
                 <div className="col-md-1"></div>
                 <div className="col-md-7">
@@ -57,10 +50,10 @@ export class SettingsMain extends Component {
                         <b className="resetpass">Reset Password</b>
                         </div>
                         <div className="col-md-5 maincontent2">
-                        <button type="button" className="view_cont btnview">
+                        <Link className="view_cont btnview">
                          View
                         <i className="fa fa-angle-right float-right fa-lg"></i>
-                        </button>
+                        </Link>
                         </div>
                         </div>
                     </div>
@@ -70,17 +63,17 @@ export class SettingsMain extends Component {
                         <b className="resetpass">View Terms and Conditions</b>
                         </div>
                         <div className="col-md-5 maincontent2">
-                        <button type="button" className="view_cont btnview">
+                        <Link className="view_cont btnview">
                          View
                         <i className="fa fa-angle-right float-right fa-lg"></i>
-                        </button>
+                        </Link>
                         </div>
                         </div>
                     </div>
-                    <button type="button" className="back_cont btnback">
+                    <Link className="back_cont btnback">
                         <span>Back</span>
                         <i className="fa fa-angle-left float-left fa-lg"></i>
-                    </button>
+                    </Link>
                     
                 </div>
             </div>

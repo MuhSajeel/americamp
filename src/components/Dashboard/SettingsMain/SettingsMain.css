@@ -9,41 +9,13 @@
     letter-spacing: 2px;
     font-weight: 600;
   }
-.welcome{
-    color:#2d318a;
-    font-size: 30px;
-    font-family: 'Oswald';
-    font-weight: bold;
- }
-.applicant_name{
-    font-size: 22px;
-    color: #ed1b24;
-    font-family: 'Oswald';
-    font-weight: bold;
-}
+
 .sidepanel{
 margin-left: 60px;
 border-right: 1px solid lightgrey;
 margin-bottom: 50px;
 }
-.sidebar{
-    display: inline-grid;
-    margin-bottom: 50px;
-}
-.sidebar a{
-    color:#ed1b24;
-    font-weight: bold;
-    font-size: 20px;
-    margin: 3px 0px;
-}
-.fa-bell{
-    color:#ed1b24;
-margin-left: 60px;
-}
-.profile-img{
-    width: 130px;
-    height: 130px;
-}
+
 .whitebg{
     background-color: white;
     margin:20px 0px;
@@ -68,6 +40,10 @@ margin-left: 60px;
     .btnview{
       background: #2d318a;
       margin-bottom: 20px;
+      text-align: center;
+    }
+    .btnview:hover{
+        text-decoration: none;
     }
     .btnview i{
         margin-top: 7px;
@@ -76,7 +52,7 @@ margin-left: 60px;
 
       .resetpass{
         font-size: 35px;
-        margin-left: 30px;
+        margin-left: 0px;
         color: #ed1b24;
         font-family: 'Oswald';
     }
@@ -86,6 +62,14 @@ margin-left: 60px;
     }
     .maincontent2{
         text-align: end;
+    }
+
+    .resp1{
+        margin-top:25px;
+    }
+    .resp2{
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .back_cont{
@@ -107,9 +91,13 @@ margin-left: 60px;
         .btnback{
           background: #ed1b24;
           margin-bottom: 20px;
+          text-align: center;
         }
+        .btnback:hover{
+            text-decoration: none;
+          }
         .btnback span{
-        margin-right: 10px;
+        margin-right: 20px;
           }
         .btnback i{
             margin-top: 7px;
@@ -193,6 +181,7 @@ margin-left: 60px;
     .navbar-inverse {
         background-color: transparent;
         border: none;
+        width: 400px;
     }
     .navbar-collapse{
         border: none;
@@ -210,6 +199,5 @@ margin-left: 60px;
         color:white;
         font-weight: bold;
     }
-    
 
 }
