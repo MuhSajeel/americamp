@@ -1,0 +1,84 @@
+.backcont{
+  color: #fff !important;
+  width: 250px;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+  font-family: 'Oswald';
+  margin-top: 20px;
+  font-size: 20pt;
+  font-weight: 800;
+  }
+
+  .backbtn{
+    background: #ed1b24;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .backbtn:hover{
+      text-decoration: none;
+    }
+  .backbtn span{
+  margin-right: 20px;
+    }
+  .backbtn i{
+      margin-top: 7px;
+      margin-left: 10px;
+      padding-right: 0px;  
+    }
+
+
+.submit_cont{
+    color: #fff !important;
+    width: 250px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
+    font-family: 'Oswald';
+    margin-top: 20px;
+    font-size: 20pt;
+    font-weight: 800;
+    }
+  
+    .btnsubmit{
+      background: #2d318a;
+      margin-bottom: 20px;
+      text-align: center;
+      margin-left: 20px;
+    }
+    .btnsubmit:hover{
+        text-decoration: none;
+    }
+    .btnsubmit i{
+        margin-top: 7px;
+        padding-right: 7px;  
+      }
+      .terms{
+        margin-bottom: 55px;
+      }
+
+      @media screen and (max-width: 767px) {
+      .btnsubmit{
+        width: 170px;
+        font-size: 20px;
+        margin-left: 10px;
+      }
+      .backbtn{
+        width: 170px;
+        font-size: 20px;
+        margin-left: 10px;
+      }
+      IFrame{
+        width: max-content;
+        height:max-content;
+
+      }
+      }
