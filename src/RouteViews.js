@@ -6,6 +6,7 @@ import HomePage from './components/Dashboard/HomePage/HomePage';
 import CreateAccount from './components/Dashboard/CreateAccount/CreateAccount';
 import Login from './components/Dashboard/Login/Login';
 import LostPassword from './components/Dashboard/LostPassword/LostPassword'
+import SettingsMain from './components/Dashboard/SettingsMain/SettingsMain'
 
 class RouteViews extends Component {
     render() {
@@ -17,6 +18,7 @@ class RouteViews extends Component {
             <Route path="/CreateAccount"  component={CreateAccount} />
             <Route path="/Login"  component={Login} />
             <Route path="/LostPassword"  component={LostPassword} />
+            <Route path="/SettingsMain"  component={SettingsMain} />
             </Switch>
             </div>
         );
