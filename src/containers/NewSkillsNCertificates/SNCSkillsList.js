@@ -2,7 +2,7 @@
 /* eslint-disable no-shadow */
 /* eslint-disable camelcase */
 import React, { Component } from "react";
-import { View, Alert } from "react-native";
+import { View } from "react-native";
 import { connect } from "react-redux";
 import Toast from "react-native-simple-toast";
 import { inputChanged } from "../../redux/actions";
@@ -55,7 +55,7 @@ class SNCSkillsList extends Component {
       inputChanged(selectedSkillPosition + 1, SELECTED_SKILL_POSITION);
       goBack();
     } else {
-      Toast.show("Skill Already Selected");
+      //Toast.show("Skill Already Selected");
     }
   }
 

@@ -66,18 +66,18 @@ class Login extends Component {
     const { password } = this.state;
     const { email, fetchedUserProfile, formsStatus } = this.props;
     if (!validateEmail(email)) {
-      return Alert.alert("An error happened", "Please enter a valid email", [
-        {
-          text: "Ok"
-        }
-      ]);
+      // return Alert.alert("An error happened", "Please enter a valid email", [
+      //   {
+      //     text: "Ok"
+      //   }
+      // ]);
     }
     if (!password) {
-      return Alert.alert("An error happened", "Please enter a valid password", [
-        {
-          text: "Ok"
-        }
-      ]);
+      // return Alert.alert("An error happened", "Please enter a valid password", [
+      //   {
+      //     text: "Ok"
+      //   }
+      // ]);
     }
 
     const userObj = {
@@ -92,7 +92,7 @@ class Login extends Component {
   submit() {
     const { email } = this.props;
     if (!validateEmail(email))
-      return Alert.alert("An error happened", "Please enter a valid email");
+      //return Alert.alert("An error happened", "Please enter a valid email");
 
     this.setState({ forgot: false });
     return this.props.forgotPassword({ email });

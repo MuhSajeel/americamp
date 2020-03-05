@@ -8,7 +8,7 @@ import { Icon } from 'react-native-elements';
 
 import * as Progress from 'react-native-progress';
 import { connect } from 'react-redux';
-import Toast from 'react-native-simple-toast';
+//import Toast from 'react-native-simple-toast';
 
 import { Screen, Heading, FooterWithButtons, SubHeading } from '../../../components/common';
 import { uploadImage } from '../../../helpers/S3Upload/ImageUpload';
@@ -77,7 +77,7 @@ class UploadProfile extends Component {
   abortImageUpload() {
     const { uploadImageActionFailure } = this.props;
     this.UploadImage.abort();
-    Toast.show(UPLOAD_IMAGE_CANCELLED);
+    //Toast.show(UPLOAD_IMAGE_CANCELLED);
     uploadImageActionFailure();
   }
 

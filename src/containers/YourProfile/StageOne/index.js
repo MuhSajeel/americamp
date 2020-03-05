@@ -37,7 +37,7 @@ class StageOne extends Component {
       .filter(val => val);
     if (result.length === requiredFormsList.length)
       return this.props.fetchInterviewStatus();
-    return Toast.show(INTERVIEW_ERROR_MSG);
+    return //Toast.show(INTERVIEW_ERROR_MSG);
   }
 
   render() {

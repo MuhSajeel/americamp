@@ -1,7 +1,7 @@
 /* eslint-disable camelcase */
-import { Alert } from 'react-native';
+ 
 import { switchMap, filter } from 'rxjs/operators';
-import Toast from 'react-native-simple-toast';
+//import Toast from 'react-native-simple-toast';
 
 import { inputChanged } from '../actions';
 import { RestClient } from '../../network/RestClient';
@@ -14,7 +14,7 @@ import {
   FETCH_USER_PROFILE_ON_BOARDING_SUCCESS,
   SETTINGS,
 } from '../../constants';
-import NavigationService from '../../navigator/Navigation';
+//import NavigationService from '../../navigator/Navigation';
 
 export class FeedbackEpic {
   static feedback = action$ =>
@@ -39,8 +39,8 @@ export class FeedbackEpic {
             if (resObj) {
               const { data } = resObj;
               if (feedback) {
-                NavigationService.navigate(SETTINGS);
-                Toast.show(resObj.msg);
+                //NavigationService.navigate(SETTINGS);
+                //Toast.show(resObj.msg);
               }
               return inputChanged(data, FETCH_FEEDBACK_SUCCESS);
             }
@@ -50,7 +50,7 @@ export class FeedbackEpic {
         } catch (error) {
           // eslint-disable-next-line no-console
           console.log('Fetch Error', error);
-          Alert.alert(UNKNOWN_ERROR_MSG);
+          // Alert.alert(UNKNOWN_ERROR_MSG);
           return inputChanged(null, FETCH_FEEDBACK_FAILURE);
         }
       })

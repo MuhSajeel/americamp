@@ -9,6 +9,7 @@ import LostPassword from './components/Dashboard/LostPassword/LostPassword'
 import SettingsMain from './components/Dashboard/SettingsMain/SettingsMain'
 import TermsandConditions from './components/Dashboard/TermsandConditions/termsandconditions'
 import ResetPassword from './components/Dashboard/ResetPassword/resetpassword'
+import YourApplication from './components/Dashboard/YourApplication/yourapplication'
 
 class RouteViews extends Component {
     render() {
@@ -23,6 +24,7 @@ class RouteViews extends Component {
             <Route path="/settingsmain"  component={SettingsMain} />
             <Route path="/termsandconditions"  component={TermsandConditions} />
             <Route path="/resetpassword"  component={ResetPassword} />
+            <Route path="/yourapplication"  component={YourApplication} />
             </Switch>
             </div>
         );

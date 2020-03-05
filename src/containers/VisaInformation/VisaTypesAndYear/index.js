@@ -68,7 +68,7 @@ class VisaTypesAndYear extends Component {
       inputChanged(previous_visa_details, VISA_TYPES_ACTION);
       return null;
     }
-    return SimpleToast.show(
+    return Simple//Toast.show(
       `Can not add more than ${number_of_j1_visas} details`
     );
   }
@@ -153,12 +153,12 @@ class VisaTypesAndYear extends Component {
             leftBtnNavigation={() => goBack(null)}
             rightBtnNavigation={() => {
               if (!isAllDetailFilled(previous_visa_details)) {
-                return SimpleToast.show(`Please fill all fields`);
+                return Simple//Toast.show(`Please fill all fields`);
               }
               if (
                 previous_visa_details.length < parseInt(number_of_j1_visas, 0)
               ) {
-                return SimpleToast.show(
+                return Simple//Toast.show(
                   `Please Add ${number_of_j1_visas} visa details`
                 );
               }

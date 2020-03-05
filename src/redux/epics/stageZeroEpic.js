@@ -1,5 +1,5 @@
 /* eslint-disable camelcase */
-import { Alert } from 'react-native';
+ 
 import { switchMap } from 'rxjs/operators';
 import { ofType } from 'redux-observable';
 
@@ -15,7 +15,7 @@ import {
   STAGE_ZERO_SUBMIT_SUCCESS,
   STAGE_ZERO_SUBMIT_FAILURE,
 } from '../../constants';
-import NavigationService from '../../navigator/Navigation';
+//import NavigationService from '../../navigator/Navigation';
 
 export class StageZeroEpic {
   static stageZero = action$ =>
@@ -28,7 +28,7 @@ export class StageZeroEpic {
           if (status && status === 200) {
             if (resObj && resObj.success) {
               await removeItem('@userIsFirstTimer');
-              NavigationService.navigate(YOUR_PROFILE_NAV);
+              //NavigationService.navigate(YOUR_PROFILE_NAV);
               return isStageZeroSubmitted({ apply_now }, STAGE_ZERO_SUBMIT_SUCCESS);
             }
             return isStageZeroSubmitted({ apply_now }, STAGE_ZERO_SUBMIT_FAILURE);
@@ -46,7 +46,7 @@ export class StageZeroEpic {
         } catch (error) {
           // eslint-disable-next-line no-console
           console.log('Apply Now Unknown Error', error);
-          Alert.alert(UNKNOWN_ERROR_MSG);
+          // Alert.alert(UNKNOWN_ERROR_MSG);
           return isStageZeroSubmitted({ apply_now }, STAGE_ZERO_SUBMIT_FAILURE);
         }
       })

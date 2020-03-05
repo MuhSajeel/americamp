@@ -160,7 +160,7 @@ class YourApplicationStatus extends Component {
                       : () => navigation.navigate(STAGE_TWO_FORM)
                     : stage1Progress === 100
                     ? () =>
-                        Toast.show(
+                        //Toast.show(
                           application_type === RETURN_TO_CAMP
                             ? "You Have To Complete Stage One First"
                             : `Can not pass because your interview status is ${INTERVIEW_STATUS_TITLE[status]}`

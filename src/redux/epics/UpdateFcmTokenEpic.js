@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 /* eslint-disable camelcase */
-import { Alert } from 'react-native';
+ 
 import { switchMap, filter } from 'rxjs/operators';
 
 import { inputChanged as isSavedCardDetails } from '../actions';
@@ -48,7 +48,7 @@ export class UpdateFcmTokenEpic {
             return isSavedCardDetails(resObj, UPDATE_FCM_SUCCESS);
             // eslint-disable-next-line no-else-return
           } else if (status && resObj && status === 512) {
-            //   Alert.alert('Something went wrong, Contact Admin');
+            //   // Alert.alert('Something went wrong, Contact Admin');
             return isSavedCardDetails(null, UPDATE_FCM_FAILURE);
           } else if (problem) {
             return isSavedCardDetails(null, UPDATE_FCM_FAILURE);
@@ -57,7 +57,7 @@ export class UpdateFcmTokenEpic {
           }
         } catch (error) {
           console.log('Sign Up Unknown Error', error);
-          Alert.alert(UNKNOWN_ERROR_MSG);
+          // Alert.alert(UNKNOWN_ERROR_MSG);
           return isSavedCardDetails(null, UPDATE_FCM_FAILURE);
         }
       })

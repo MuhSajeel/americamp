@@ -5,7 +5,9 @@ import axios from 'axios'
 import './Login.css';
 import HeaderImage from '../../HeaderImage/Header_Image';
 import {Link} from "react-router-dom";
-
+import { connect } from "react-redux";
+import { loginAction } from "../../../redux/actions";
+import { setItem } from "../../../helpers/Localstorage";
 export class Login extends Component {
     constructor(props) {
         super(props)
@@ -31,14 +33,21 @@ export class Login extends Component {
     
     submithandler = e => {        
         e.preventDefault()
-        console.log(this.state)
-        axios.post('http://americamp-dev.attribes.com/api/v1/users/signin',this.state)
-            .then(response => {
-                console.log(response)
-            })
-            .catch(error => {
-                console.log(error)
-            })
+        // console.log(this.state)
+        // axios.post('http://americamp-dev.attribes.com/api/v1/users/signin',this.state)
+        //     .then(response => {
+        //         console.log(response)
+        //     })
+        //     .catch(error => {
+        //         console.log(error)
+        //     })
+        const { email, password } = this.state;
+        const userObj = {
+            email,
+            password
+          };
+          
+          return this.props.loginAction(userObj);
     }
 
     render() {
@@ -51,10 +60,10 @@ export class Login extends Component {
             <p className="loginheading">
             <b className="display-3 login_heading">Login to your AmeriCamp account </b>
             </p>            
-            <form className="createaccountform" onSubmit={this.submithandler}>
+            <form className="createaccountform" onSubmit={this.submithandler} method="POST">
                 <div className="form-group">
                     <label className="login_label">Email address<span className="required">*</span></label>
-                    <input type="email" className="form-control" name="email" onChange={this.handleEmailChange} autocomplete="off" required></input>
+                    <input type="email" className="form-control" name="email" onChange={this.handleEmailChange} autoComplete="off" required></input>
                 </div>
                 <div className="form-group">
                     <label className="login_label">Password<span className="required">*</span></label>
@@ -79,5 +88,15 @@ export class Login extends Component {
         )
     }
 }
-
-export default Login
+const mapStateToProps = ({
+    emailReducer: { email }
+  }) => {
+    return {
+      email
+    };
+  };
+export default connect(
+    mapStateToProps,
+    { loginAction }
+  )(Login);
+  

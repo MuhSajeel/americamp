@@ -1,0 +1,98 @@
+
+.yourapp{
+    margin-bottom: 70px;
+}
+.btnapp i{
+    margin-top: 5px;
+    padding-right: 0;
+    margin-left: 12px;
+}
+.btnstart{
+    margin-top: 20px;
+}
+.btn1,.btn2{
+    width: 200px;
+}
+.btn1{
+    margin-top: 20px;
+}
+.btn2{
+    margin-top: 60px;
+}
+
+.appprogress{
+    margin-top: 15px;
+    margin-bottom: 2px;
+}
+.appprogress p{
+    font-weight: bold;
+    margin-top: 5px;
+    font-size: 15px;
+}
+.application-progress{
+    font-size: 25px;
+    color: #ed1b24;
+    font-family: 'Oswald';
+    font-weight: bold;
+    width: max-content;
+}
+.view_cont_big{
+  color: #fff !important;      
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+  font-family: 'Oswald';
+  padding-right: 20px;
+  padding-left: 20px;   
+  font-size: 15pt;
+  font-weight: 800;
+  }
+.box{
+    background-color: white;
+    width: 350px;
+    height: 180px;
+    border-radius: 10px;
+    margin-top: 17px;
+    padding: 20px;
+}
+.redboxicon1{
+    width: 50px;
+}
+.redboxicon2{
+    width: 50px;
+}
+.redboxicon3{
+    width: 40px;
+}
+.redboxicon4{
+    width: 35px;
+}
+.red-box{
+    background-color: #ed1b24;
+    width: 170px;
+    height: 110px;
+    text-align: center;
+    margin: 50px 20px 0px 20px;
+    border-radius: 20px;
+    padding: 20px;
+}
+.red-box p{
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .red-box{
+        width: 150px;
+    }
+    .red-box p{
+        font-size: 13px;
+    }
+
+    }

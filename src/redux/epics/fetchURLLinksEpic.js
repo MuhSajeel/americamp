@@ -1,5 +1,5 @@
 /* eslint-disable camelcase */
-import { Alert } from 'react-native';
+ 
 import { switchMap, filter } from 'rxjs/operators';
 import { ofType } from 'redux-observable';
 
@@ -51,7 +51,7 @@ export class FetchUrlLinkEpic {
         } catch (error) {
           // eslint-disable-next-line no-console
           console.log('Fetch Error', error);
-          Alert.alert(UNKNOWN_ERROR_MSG);
+          // Alert.alert(UNKNOWN_ERROR_MSG);
           return isApplyNowFetched(null, URL_LINK_FETCH_FAILURE);
         }
         return null;

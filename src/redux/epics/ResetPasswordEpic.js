@@ -1,4 +1,4 @@
-import { Alert } from 'react-native';
+ 
 import { switchMap } from 'rxjs/operators';
 import { ofType } from 'redux-observable';
 import { RestClient } from '../../network/RestClient';
@@ -12,7 +12,7 @@ import {
 } from '../../constants';
 import { resetPasswordSuccess, resetPasswordFailure } from '../actions/ResetPasswordActions';
 import { errorMessage, successMessage } from '../../helpers/MessageAlert';
-import NavigationService from '../../navigator/Navigation';
+//import NavigationService from '../../navigator/Navigation';
 
 export class ResetPasswordEpic {
   static ResetPassword = action$ =>
@@ -28,7 +28,7 @@ export class ResetPasswordEpic {
           if (status && status === 200) {
             if (resObj && resObj.success) {
               successMessage(response.data.msg);
-              NavigationService.navigate(SETTINGS);
+              //NavigationService.navigate(SETTINGS);
               return resetPasswordSuccess(response);
             }
             return resetPasswordFailure();
@@ -47,7 +47,7 @@ export class ResetPasswordEpic {
         } catch (error) {
           // eslint-disable-next-line no-console
           console.log(error);
-          Alert.alert(UNKNOWN_ERROR_MSG);
+          // Alert.alert(UNKNOWN_ERROR_MSG);
           return resetPasswordFailure();
         }
       })

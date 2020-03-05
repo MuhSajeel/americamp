@@ -1,4 +1,4 @@
-import { Alert } from 'react-native';
+ 
 import { switchMap } from 'rxjs/operators';
 import { ofType } from 'redux-observable';
 
@@ -13,7 +13,7 @@ import {
   DASHBOARD,
   INTERVIEW_STATUS_CHANGED,
 } from '../../constants';
-import NavigationService from '../../navigator/Navigation';
+//import NavigationService from '../../navigator/Navigation';
 
 export class BookInterviewEpic {
   static bookInterview = action$ =>
@@ -25,7 +25,7 @@ export class BookInterviewEpic {
           const { status, data: resObj } = response;
           if (status && status === 200) {
             if (resObj && resObj.success) {
-              NavigationService.navigate(DASHBOARD);
+              //NavigationService.navigate(DASHBOARD);
               return inputChanged(resObj.data.status, INTERVIEW_STATUS_CHANGED);
             }
 
@@ -46,7 +46,7 @@ export class BookInterviewEpic {
         } catch (error) {
           // eslint-disable-next-line no-console
           console.log('Profile Info Unknown Error', error);
-          Alert.alert(UNKNOWN_ERROR_MSG);
+          // Alert.alert(UNKNOWN_ERROR_MSG);
           return bookInterviewFailure();
         }
       })
