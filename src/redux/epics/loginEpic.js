@@ -15,8 +15,9 @@ import {
 //import NavigationService from '../../navigator/Navigation';
 import { RestClient } from '../../network/RestClient';
 import { push } from 'connected-react-router';
+import { createHashHistory } from 'history';
 
-
+const history = createHashHistory();
 export class LoginEpic {
   
   static login = action$ =>
@@ -47,7 +48,7 @@ export class LoginEpic {
                 setItem('@formsStatus', JSON.stringify(formsStatus));
                 console.log("");
                 if (route) push('/');
-                else push('/CreateAccount');
+                else history.push('/LostPassword');
                 return loginActionSuccess(resObj.data);
               }
               // Alert.alert(NETWORK_ERROR_MSG);
