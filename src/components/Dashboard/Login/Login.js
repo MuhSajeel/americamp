@@ -95,7 +95,6 @@ const mapStateToProps = ({
       email
     };
   };
-  console.log('email',this.email);
 export default connect(
     mapStateToProps,
     { loginAction }
