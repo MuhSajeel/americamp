@@ -24,6 +24,10 @@ export class Login extends Component {
     handlePasswordChange (evt) {
         this.setState({ password: evt.target.value });
       }
+
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
     
     submithandler = e => {        
         e.preventDefault()

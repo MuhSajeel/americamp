@@ -7,7 +7,9 @@ import { Link } from 'react-router-dom';
 import Sidepanel from '../../SidePanel/sidepanel'
 import ResponsiveHeader from '../../ResponsiveHeader/responsiveheader'
 export class SettingsMain extends Component {
-   
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
     render() {
         return (
             <div className="row">

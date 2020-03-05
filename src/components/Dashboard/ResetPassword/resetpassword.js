@@ -4,6 +4,11 @@ import './resetpassword.css';
 import Sidepanel from '../../SidePanel/sidepanel'
 import ResponsiveHeader from '../../ResponsiveHeader/responsiveheader'
 export class resetpassword extends Component {
+
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+    
     render() {
         return (
             <div className="row">

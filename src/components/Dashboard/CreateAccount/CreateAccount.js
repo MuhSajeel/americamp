@@ -46,6 +46,10 @@ export class CreateAccount extends Component {
     handlecountryChange (evt) {
         this.setState({ user: { ...this.state.user, country: evt.target.value} });
     }
+
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
     
     submithandler = e => {        
         e.preventDefault()
@@ -95,7 +99,7 @@ export class CreateAccount extends Component {
                     </div>
                     <div className="form-group">
                     <label className="createaccount_label">What country are you applying from?<span class="required">*</span></label>
-                        <select className="form-control" onChange={this.handlecountryChange} required>
+                        <select className="form-control" size="1" onChange={this.handlecountryChange} required>
                             <option value="">Choose one</option>
                             <option value="Afganistan">Afghanistan</option>
                             <option value="Albania">Albania</option>
