@@ -14,8 +14,11 @@ import {
 } from '../../constants';
 //import NavigationService from '../../navigator/Navigation';
 import { RestClient } from '../../network/RestClient';
+import { push } from 'connected-react-router';
+
 
 export class LoginEpic {
+  
   static login = action$ =>
     action$.pipe(
       ofType(LOGIN),
@@ -33,15 +36,18 @@ export class LoginEpic {
                 const {
                   data: { token, id, apply_now },
                 } = resObj;
-                const data = fetchedUserProfile;
+                // console.log(resObj.data);
+                // debugger
+                const data = resObj.data;
                 data.id = id;
                 data.token = token;
                 data.apply_now = apply_now;
                 RestClient.setHeader('Authorization', token);
                 await setItem('@userProfile', JSON.stringify(data));
                 setItem('@formsStatus', JSON.stringify(formsStatus));
-                //if (route) NavigationService.navigate(route);
-                // else NavigationService.navigate(DASHBOARD);
+                console.log("");
+                if (route) push('/');
+                else push('/CreateAccount');
                 return loginActionSuccess(resObj.data);
               }
               // Alert.alert(NETWORK_ERROR_MSG);
