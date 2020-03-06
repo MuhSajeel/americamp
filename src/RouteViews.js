@@ -9,6 +9,7 @@ import SettingsMain from "./components/Dashboard/SettingsMain/SettingsMain";
 import TermsandConditions from "./components/Dashboard/TermsandConditions/termsandconditions";
 import ResetPassword from "./components/Dashboard/ResetPassword/resetpassword";
 import YourApplication from "./components/Dashboard/YourApplication/yourapplication";
+import YourApplication_congrats from "./components/Dashboard/YourApplication_Congratulations/yourapp_congrats";
 
 class RouteViews extends Component {
     render() {
@@ -24,6 +25,7 @@ class RouteViews extends Component {
             <Route path="/termsandconditions"  component={TermsandConditions} />
             <Route path="/resetpassword"  component={ResetPassword} />
             <Route path="/yourapplication"  component={YourApplication} />
+            <Route path="/congratulations"  component={YourApplication_congrats} />
             </Switch>
             </div>
         );

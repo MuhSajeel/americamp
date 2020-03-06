@@ -1,0 +1,105 @@
+.congrats{
+    width: 100%;
+}
+.para{
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+    float: left;
+    margin-top: 20px;
+    width: 100%;
+    letter-spacing: 1px;
+}
+.tshirtimg{
+    width: 300px;
+    height: 300px;
+    margin-top: 40px;
+}
+.imagediv{
+    width: 100%;
+}
+
+.back_contcongrats{
+    color: #fff !important;
+    width: 250px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
+    font-family: 'Oswald';
+    margin-top: 20px;
+    font-size: 20pt;
+    font-weight: 800;
+    }
+  
+    .btnbackcongrats{
+      background: #ed1b24;
+      margin-bottom: 20px;
+      text-align: center;
+      margin-right: 20px;
+    }
+    .btnbackcongrats:hover{
+        text-decoration: none;
+      }
+
+
+      .next_cont{
+        color: #fff !important;
+        width: 250px;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 30px;
+        cursor: pointer;
+        display: inline-block;
+        border: none;
+        transition: all 0.4s ease 0s;
+        font-family: 'Oswald';
+        margin-top: 20px;
+        font-size: 20pt;
+        font-weight: 800;
+        }
+      
+        .btnnext{
+          background: #2d318a;
+          margin-bottom: 20px;
+          text-align: center;
+          margin-left: 350px;
+        }
+        .btnnext:hover{
+            text-decoration: none;
+          }
+
+        .fa-lg{
+            margin-top: 6px;
+        }
+
+        .buttons{
+            margin-top: 40px;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 767px) {
+        .next_cont,.back_contcongrats{
+            width: 170px;
+            font-size: 20px;
+        }
+        .btnnext{
+            margin-left: 0;
+        }
+        .fa-lg{
+            margin-top: 4px;
+        }
+        .para,.imagediv,.buttons{
+            text-align: center;
+        }
+        .congrats{
+            font-size: 40px;
+            text-align: center;
+        }
+        .congratspage{
+            display: none;
+        }
+        }

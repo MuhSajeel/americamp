@@ -17,7 +17,8 @@
     text-align: center;
     position: relative;
     top: 50%;
-    left: 18%;
+    left: 16%;
+    font-size: 100px;
     right:18%;
     transform: translate(-50%, -50%);
     color: white;
