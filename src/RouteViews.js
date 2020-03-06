@@ -19,7 +19,7 @@ class RouteViews extends Component {
             <Switch>
             <Route path="/" exact  component={HomePage} />
             <Route path="/CreateAccount"  component={CreateAccount} />
-            <Route path="/Login"  component={Login} />
+            <Route path="/login"  component={Login} />
             <Route path="/LostPassword"  component={LostPassword} />
             <Route path="/settingsmain"  component={SettingsMain} />
             <Route path="/termsandconditions"  component={TermsandConditions} />

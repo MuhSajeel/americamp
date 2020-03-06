@@ -3,6 +3,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react'
 import './sidepanel.css';
+import { Link } from 'react-router-dom';
 export class sidepanel extends Component {
     render() {
         return (
@@ -12,9 +13,9 @@ export class sidepanel extends Component {
                     <p><img className="profile-img" src="Assets/Icons/profile-image-png-10.png" /></p>
 
                     <div className="sidebar">
-                        <a href="#">Home</a>
-                        <a href="#">Settings</a>
-                        <a href="#">Log Out</a>
+                    <Link to="/yourapplication"><a href="#">Home</a></Link>
+                        <Link to="/settingsmain"><a href="#">Settings</a></Link>
+                        <Link to="/login"><a href="#">Log Out</a></Link>
                     </div>
                 </div>
 
