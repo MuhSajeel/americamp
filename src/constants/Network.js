@@ -1,7 +1,6 @@
-import { Platform } from "react-native";
 export const DEV_URL = "http://americamp-dev.attribes.com";
-export const STAGING_URL = "http://americamp.attribes.com";
-export const BASE_URL = Platform.OS === "ios" ? STAGING_URL : DEV_URL;
+export const STAGING_URL = "http://americamp-dev.attribes.com";
+export const BASE_URL = STAGING_URL;
 export const API_VERSION = "api/v1";
 
 export const API_ENDPOINTS = {

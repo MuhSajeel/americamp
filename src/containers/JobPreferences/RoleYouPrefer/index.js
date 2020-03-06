@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, Alert } from 'react-native';
+import { View, Text } from 'react-native';
 import { connect } from 'react-redux';
 
 import { Screen, Heading, FooterWithButtons, PickerOptions } from '../../../components/common';
@@ -52,10 +52,10 @@ class RoleYouPrefer extends Component {
             leftBtnNavigation={() => navigation.goBack()}
             rightBtnNavigation={() => {
               if (Role !== role) {
-                return Alert.alert(
-                  "Can't get you through!",
-                  "Your current selection doesn't match with your previous selection for more information please contact AmeriCamp."
-                );
+                // return Alert.alert(
+                //   "Can't get you through!",
+                //   "Your current selection doesn't match with your previous selection for more information please contact AmeriCamp."
+                // );
               }
               return navigation.navigate(JOB_DETAILS);
             }}

@@ -5,6 +5,11 @@ import './LostPassword.css';
 import HeaderImage from '../../HeaderImage/Header_Image';
 
 export class LostPassword extends Component {
+
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+    
     render() {
         return (
             <div>

@@ -1,5 +1,5 @@
 /* eslint-disable camelcase */
-import { Alert } from 'react-native';
+ 
 import { switchMap } from 'rxjs/operators';
 import { ofType } from 'redux-observable';
 
@@ -48,7 +48,7 @@ export class CardDetailsSaveEpic {
         } catch (error) {
           // eslint-disable-next-line no-console
           console.log('Sign Up Unknown Error', error);
-          Alert.alert(UNKNOWN_ERROR_MSG);
+          // Alert.alert(UNKNOWN_ERROR_MSG);
           return isSavedCardDetails(payload, SAVE_CARD_INFO_FAILURE);
         }
       })

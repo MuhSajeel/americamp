@@ -1,9 +1,11 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react'
-import axios from 'axios'
+// import axios from 'axios'
 import './CreateAccount.css';
 import HeaderImage from '../../HeaderImage/Header_Image';
+import { connect } from "react-redux";
+import { signUp } from "../../../redux/actions/signUpActions";
 
 export class CreateAccount extends Component {
     constructor(props) {
@@ -46,18 +48,34 @@ export class CreateAccount extends Component {
     handlecountryChange (evt) {
         this.setState({ user: { ...this.state.user, country: evt.target.value} });
     }
+
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
     
     submithandler = e => {        
         e.preventDefault()
         console.log(this.state)
-        axios.post('http://americamp-dev.attribes.com/api/v1/users/signup',this.state,{
-            headers: {'Content-Type': 'application/json','Accept': '*/*'}})
-            .then(response => {
-                console.log(response)
-            })
-            .catch(error => {
-                console.log(error)
-            })
+        // axios.post('http://americamp-dev.attribes.com/api/v1/users/signup',this.state,{
+        //     headers: {'Content-Type': 'application/json','Accept': '*/*'}})
+        //     .then(response => {
+        //         console.log(response)
+        //     })
+        //     .catch(error => {
+        //         console.log(error)
+        //     })
+
+        // const { name,email,password,c_password,country } = this.state;
+        // const userObj = {
+        //     name,
+        //     email,
+        //     password,
+        //     c_password,
+        //     country
+        //   };
+        
+          
+        return this.props.signUp(this.state);
     }
 
     render() {
@@ -75,15 +93,15 @@ export class CreateAccount extends Component {
                     
                     <div className="form-group">
                         <label className="createaccount_label">First name<span className="required">*</span></label>
-                        <input type="text" className="form-control" name="name" onChange={this.handlefirst_nameChange} autocomplete="off" required></input>
+                        <input type="text" className="form-control" name="name" onChange={this.handlefirst_nameChange} autoComplete="off" required></input>
                     </div>
                     <div className="form-group">
                         <label className="createaccount_label">Last name<span className="required">*</span></label>
-                        <input type="text" className="form-control" name="last_name" autocomplete="off" required></input>
+                        <input type="text" className="form-control" name="last_name" autoComplete="off" required></input>
                     </div>
                     <div className="form-group">
                         <label className="createaccount_label">Email address<span className="required">*</span></label>
-                        <input type="email" className="form-control" name="email" onChange={this.handleEmailChange} autocomplete="off" required></input>
+                        <input type="email" className="form-control" name="email" onChange={this.handleEmailChange} autoComplete="off" required></input>
                     </div>
                     <div className="form-group">
                         <label className="createaccount_label">Password<span className="required">*</span></label>
@@ -95,7 +113,7 @@ export class CreateAccount extends Component {
                     </div>
                     <div className="form-group">
                     <label className="createaccount_label">What country are you applying from?<span class="required">*</span></label>
-                        <select className="form-control" onChange={this.handlecountryChange} required>
+                        <select className="form-control" size="1" onChange={this.handlecountryChange} required>
                             <option value="">Choose one</option>
                             <option value="Afganistan">Afghanistan</option>
                             <option value="Albania">Albania</option>
@@ -365,4 +383,15 @@ export class CreateAccount extends Component {
     }
 }
 
-export default CreateAccount
+const mapStateToProps = ({
+    emailReducer: { email }
+  }) => {
+    return {
+      email
+    };
+  };
+export default connect(
+    mapStateToProps,
+    { signUp }
+  )(CreateAccount);
+  

@@ -4,7 +4,7 @@ import React from 'react';
 import { View, Text, Platform } from 'react-native';
 import { Icon } from 'react-native-elements';
 import { connect } from 'react-redux';
-import Toast from 'react-native-simple-toast';
+//import Toast from 'react-native-simple-toast';
 import { referenceTwoEmail, infoSubmited } from '../../../redux/actions';
 import {
   Screen,
@@ -77,10 +77,10 @@ const ReferenceName = ({
                   ? () => {
                     if (validateEmail(email)) {
                       if (emailReducer.email === email) {
-                        Toast.show(DO_NOT_ENTER_SAME_EMAIL);
+                        //Toast.show(DO_NOT_ENTER_SAME_EMAIL);
                       }
                       if (emailOne === email) {
-                        Toast.show(DO_NOT_ENTER_PREVIOUS_EMAIL);
+                        //Toast.show(DO_NOT_ENTER_PREVIOUS_EMAIL);
                       }
                       if (emailReducer.email !== email && emailOne !== email) {
                         const data = fetchedUserProfile;
@@ -88,7 +88,7 @@ const ReferenceName = ({
                         infoSubmited(data);
                       }
                     } else {
-                      Toast.show(ENTER_VALID_EMAIL);
+                      //Toast.show(ENTER_VALID_EMAIL);
                     }
                   }
                   : null

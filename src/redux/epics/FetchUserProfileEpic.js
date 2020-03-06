@@ -1,4 +1,4 @@
-import { Alert } from 'react-native';
+ 
 import { switchMap, filter } from 'rxjs/operators';
 
 import { fetchUserProfileSuccess, fetchUserProfileFailure, logoutAction } from '../actions';
@@ -55,7 +55,7 @@ export class FetchUserProfileEpic {
                 await setItem('@userProfile', JSON.stringify(newData));
                 return fetchUserProfileSuccess(newData);
               }
-              Alert.alert(NETWORK_DATA_ERROR_MSG);
+              // Alert.alert(NETWORK_DATA_ERROR_MSG);
               return fetchUserProfileSuccess(localData);
             }
             if (status && (status === 401 || status === 422 || status === 512)) {
@@ -64,17 +64,17 @@ export class FetchUserProfileEpic {
                 resObj.msg === 'Not enough or too many segments' ||
                 resObj.msg === 'Invalid token.'
               ) {
-                Alert.alert(resObj.msg, 'Logging you out!');
+                // Alert.alert(resObj.msg, 'Logging you out!');
                 return logoutAction();
               }
-              Alert.alert(resObj.msg);
+              // Alert.alert(resObj.msg);
               return fetchUserProfileSuccess(localData);
             }
             if (problem && problem === NETWORK_ERROR_MSG) {
-              Alert.alert(NETWORK_DATA_ERROR_MSG);
+              // Alert.alert(NETWORK_DATA_ERROR_MSG);
               return fetchUserProfileSuccess(localData);
             }
-            Alert.alert(DATA_NOT_SYNCED_MSG);
+            // Alert.alert(DATA_NOT_SYNCED_MSG);
             return fetchUserProfileSuccess(localData);
           }
           return fetchUserProfileSuccess(localData);

@@ -1,4 +1,4 @@
-import { Alert } from 'react-native';
+ 
 import { switchMap } from 'rxjs/operators';
 import { ofType } from 'redux-observable';
 
@@ -49,7 +49,7 @@ export class FetchUserProfileFromOnBoardingEpic {
                   await setItem('@userProfile', JSON.stringify(newData));
                   return fetchUserProfileSuccessOnBoarding(localData);
                 }
-                Alert.alert(NETWORK_DATA_ERROR_MSG);
+                // Alert.alert(NETWORK_DATA_ERROR_MSG);
                 return fetchUserProfileSuccessOnBoarding(localData);
               }
               if (status && (status === 401 || status === 422 || status === 512)) {
@@ -58,17 +58,17 @@ export class FetchUserProfileFromOnBoardingEpic {
                   resObj.msg === 'Not enough or too many segments' ||
                   resObj.msg === 'Invalid token.'
                 ) {
-                  Alert.alert(resObj.msg, 'Logging you out!');
+                  // Alert.alert(resObj.msg, 'Logging you out!');
                   return logoutAction();
                 }
-                Alert.alert(resObj.msg);
+                // Alert.alert(resObj.msg);
                 return fetchUserProfileSuccessOnBoarding(localData);
               }
               if (problem && problem === NETWORK_ERROR_MSG) {
-                Alert.alert(NETWORK_DATA_ERROR_MSG);
+                // Alert.alert(NETWORK_DATA_ERROR_MSG);
                 return fetchUserProfileSuccessOnBoarding(localData);
               }
-              Alert.alert(DATA_NOT_SYNCED_MSG);
+              // Alert.alert(DATA_NOT_SYNCED_MSG);
               return fetchUserProfileSuccessOnBoarding(localData);
             }
             return fetchUserProfileSuccessOnBoarding(localData);

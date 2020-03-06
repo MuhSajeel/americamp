@@ -1,0 +1,203 @@
+.settings{
+    margin:60px 50px;
+  }
+  .setting_heading{
+    color: #ed1b24;
+    font-family: 'Oswald';
+    font-size: 62pt;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-weight: 600;
+  }
+
+.sidepanel{
+margin-left: 60px;
+border-right: 1px solid lightgrey;
+margin-bottom: 50px;
+}
+
+.whitebg{
+    background-color: white;
+    margin:20px 0px;
+    border-radius: 18px;
+}
+.view_cont{
+    color: #fff !important;
+    width: 200px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
+    font-family: 'Oswald';
+    margin-top: 20px;
+    font-size: 20pt;
+    font-weight: 800;
+    }
+  
+    .btnview{
+      background: #2d318a;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .btnview:hover{
+        text-decoration: none;
+    }
+    .btnview i{
+        margin-top: 7px;
+        padding-right: 7px;  
+      }
+
+      .resetpass{
+        font-size: 35px;
+        margin-left: 0px;
+        color: #ed1b24;
+        font-family: 'Oswald';
+    }
+    .maincontent1{
+        text-align: initial;
+        margin-top: 20px;
+    }
+    .maincontent2{
+        text-align: end;
+    }
+
+    .resp1{
+        margin-top:25px;
+    }
+    .resp2{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .back_cont{
+        color: #fff !important;
+        width: 250px;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 30px;
+        cursor: pointer;
+        display: inline-block;
+        border: none;
+        transition: all 0.4s ease 0s;
+        font-family: 'Oswald';
+        margin-top: 20px;
+        font-size: 20pt;
+        font-weight: 800;
+        }
+      
+        .btnback{
+          background: #ed1b24;
+          margin-bottom: 20px;
+          text-align: center;
+        }
+        .btnback:hover{
+            text-decoration: none;
+          }
+        .btnback span{
+        margin-right: 20px;
+          }
+        .btnback i{
+            margin-top: 7px;
+            margin-left: 10px;
+            padding-right: 0px;  
+          }
+
+          .onlyforresponsive{
+              display: none;
+          }
+
+@media screen and (max-width: 767px) {
+    .onlyforresponsive{
+        display: block;
+        background: #ed1b24;
+        text-align: center;
+    }
+    .welcomeresp{
+        margin:20px 0px;
+    }
+    .welcomeresphead{
+        color:white;
+        font-size: 22px;
+        font-family: 'Oswald';
+        margin-left: 20px;
+    }
+    .profile-img{
+        width: 70px;
+        height: 70px;
+        left: 7%;
+        top: 30px;
+        position: absolute;
+    }
+    .starimg{
+        width: 100%;
+        position: absolute;
+        left: 0;
+    }
+    .sidepanel{
+        display: none;
+    }
+    .settings{
+        text-align: center;
+    }
+    .setting_heading{
+        color:#2d318a;
+        font-size: 32pt;
+    }
+    .view_cont{
+        width: 120px;
+        font-size: 12pt;
+    }
+    .btnview i{
+        margin-top: 4px;
+      }
+
+      .back_cont{
+        width: 120px;
+        font-size: 12pt;
+    }
+    .btnback i{
+        margin-top: 4px;
+      }
+    .resetpass{
+        font-size: 20px;
+        margin-left: 0px;
+    }
+    .resp1{
+        margin-top:25px;
+    }
+    .resp2{
+        margin-top:10px;
+    }
+    .maincontent1{
+        width: 50%;
+    }
+    .maincontent2{
+        width: 50%;
+    }
+
+    .navbar-inverse {
+        background-color: transparent;
+        border: none;
+        width: 400px;
+    }
+    .navbar-collapse{
+        border: none;
+    }
+    .navbar-toggle{
+        border:none;
+        position: absolute;
+        top: 10px;
+        right: 0;
+    }
+    .navbar-inverse .navbar-toggle:hover,.navbar-inverse .navbar-toggle:focus{
+        background-color: transparent;
+    }
+    .navbar-inverse .navbar-nav>li>a{
+        color:white;
+        font-weight: bold;
+    }
+
+}

@@ -1,7 +1,7 @@
 /* eslint-disable camelcase */
 import { switchMap } from 'rxjs/operators';
 import { ofType } from 'redux-observable';
-import Toast from 'react-native-simple-toast';
+//import Toast from 'react-native-simple-toast';
 
 import { inputChanged as isSavedCardDetails } from '../actions';
 import {
@@ -34,21 +34,21 @@ export class StripeTokenGenerateEpic {
               );
             }
             if (status && status === 512) {
-              Toast.show(resObj.error.message);
+              //Toast.show(resObj.error.message);
               return isSavedCardDetails(payload, SAVE_CARD_INFO_FAILURE);
             }
             if (problem) {
-              Toast.show(resObj.error.message);
+              //Toast.show(resObj.error.message);
               return isSavedCardDetails(payload, SAVE_CARD_INFO_FAILURE);
             }
           } else {
-            Toast.show(ERROR_MSG);
+            //Toast.show(ERROR_MSG);
             return isSavedCardDetails(payload, SAVE_CARD_INFO_FAILURE);
           }
         } catch (error) {
           // eslint-disable-next-line no-console
           console.log('Sign Up Unknown Error', error);
-          Toast.show(UNKNOWN_ERROR_MSG);
+          //Toast.show(UNKNOWN_ERROR_MSG);
           return isSavedCardDetails(payload, SAVE_CARD_INFO_FAILURE);
         }
         return null;

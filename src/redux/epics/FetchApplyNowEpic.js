@@ -1,5 +1,5 @@
 /* eslint-disable camelcase */
-import { Alert } from 'react-native';
+ 
 import { switchMap, filter } from 'rxjs/operators';
 import { ofType } from 'redux-observable';
 
@@ -52,7 +52,7 @@ export class FetchApplyNowDataEpic {
         } catch (error) {
           // eslint-disable-next-line no-console
           console.log('Fetch Error', error);
-          Alert.alert(UNKNOWN_ERROR_MSG);
+          // Alert.alert(UNKNOWN_ERROR_MSG);
           return isApplyNowFetched(null, FETCH_APPLY_NOW_DATA_FAILURE);
         }
       })

@@ -1,0 +1,61 @@
+
+.welcome{
+    color:#2d318a;
+    font-size: 30px;
+    font-family: 'Oswald';
+    font-weight: bold;
+    width: max-content;
+ }
+.applicant_name{
+    font-size: 22px;
+    color: #ed1b24;
+    font-family: 'Oswald';
+    font-weight: bold;
+    width: max-content;
+}
+.sidepanel{
+margin-left: 60px;
+border-right: 1px solid lightgrey;
+margin-bottom: 50px;
+}
+.sidebar{
+    display: inline-grid;
+    margin-bottom: 50px;
+}
+.sidebar a{
+    color:#ed1b24;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 3px 0px;
+}
+.fa-bell{
+    color:#ed1b24;
+    position: absolute;
+    left: 200px;
+    top: 7px;
+}
+.bellimg{
+    position: absolute;
+    right: 20px;
+    width: 35px;
+    cursor: pointer;
+}
+.profile-img{
+    width: 130px;
+    height: 130px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .profile-img{
+        width: 70px;
+        height: 70px;
+        left: 7%;
+        top: 30px;
+        position: absolute;
+    }
+    .sidepanel{
+        display: none;
+    }
+   
+}

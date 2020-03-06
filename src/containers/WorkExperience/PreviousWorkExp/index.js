@@ -40,7 +40,7 @@ const PreviousWorkExperience = ({ navigation, previousWorkExperience, prev_work_
             prev_work_exp
               ? () => {
                   if (prev_work_exp.length < 250) {
-                    return SimpleToast.show('Must enter at least 250 characters');
+                    return Simple//Toast.show('Must enter at least 250 characters');
                   }
                   return navigate(CHILDREN_EXPERIENCE);
                 }

@@ -1,8 +1,8 @@
 /* eslint-disable no-shadow */
 /* eslint-disable camelcase */
 import React, { Component } from 'react';
-import { View, Text, Alert } from 'react-native';
-import Toast from 'react-native-simple-toast';
+import { View, Text } from 'react-native';
+//import Toast from 'react-native-simple-toast';
 import { connect } from 'react-redux';
 
 import { inputChanged, infoSubmited } from '../../../redux/actions';
@@ -66,10 +66,10 @@ class CampDetails extends Component {
     if (this.state.application_type === this.props.application_type) {
       const { camp_email, camp_phone } = this.props;
       if (!validateEmail(camp_email)) {
-        return Toast.show(ENTER_VALID_EMAIL);
+        return //Toast.show(ENTER_VALID_EMAIL);
       }
       if (camp_phone.length < 11) {
-        return Toast.show('Camp Phone Number must be at least 11 digits long');
+        return //Toast.show('Camp Phone Number must be at least 11 digits long');
       }
       const data = this.props.fetchedUserProfile;
       data.camp_information = this.props.campReducer;

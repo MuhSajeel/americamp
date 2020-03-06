@@ -1,5 +1,5 @@
 /* eslint-disable camelcase */
-import { Alert } from 'react-native';
+ 
 import { switchMap, filter } from 'rxjs/operators';
 
 import { fetchFormStatusSuccess, fetchFormStatusFailure } from '../actions';

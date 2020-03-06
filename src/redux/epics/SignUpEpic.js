@@ -1,10 +1,12 @@
+/* eslint-disable react/react-in-jsx-scope */
 /* eslint-disable camelcase */
-import { Alert } from 'react-native';
+ 
 import { switchMap } from 'rxjs/operators';
 import { ofType } from 'redux-observable';
-
 import { loginAction, signUpFailure } from '../actions';
 import { RestClient } from '../../network/RestClient';
+import { toast } from 'react-toastify';
+
 import {
   API_ENDPOINTS,
   NETWORK_ERROR_MSG,
@@ -30,30 +32,45 @@ export class SignUpEpic {
           };
           if (status && status === 200) {
             if (resObj && resObj.success) {
-              Alert.alert(ACCOUNT_CREATE_MSG);
+              toast.success("Registered Successfully", {
+                position: toast.POSITION.TOP_RIGHT
+              });
               return loginAction(userObj);
             }
-            Alert.alert(NETWORK_ERROR_MSG);
+            toast.error("Error Notification !", {
+              position: toast.POSITION.TOP_RIGHT
+            });
             return signUpFailure();
           }
           if (status && (status === 401 || status === 422 || status === 512)) {
             if (resObj && !resObj.success) {
-              Alert.alert(resObj.msg);
-              return signUpFailure();
+              toast.error("Error Notification !", {
+                position: toast.POSITION.TOP_RIGHT
+              });
+        
+              return signUpFailure()
             }
-            Alert.alert(NETWORK_ERROR_MSG);
+            toast.error("Error Notification !", {
+              position: toast.POSITION.TOP_RIGHT
+            });
             return signUpFailure();
           }
           if (problem && problem === NETWORK_ERROR_MSG) {
-            Alert.alert(NETWORK_ERROR_MSG);
+            toast.error("Error Notification !", {
+              position: toast.POSITION.TOP_RIGHT
+            });
             return signUpFailure();
           }
-          Alert.alert(ERROR_MSG);
+          toast.error("Error Notification !", {
+            position: toast.POSITION.TOP_RIGHT
+          });
           return signUpFailure();
         } catch (error) {
           // eslint-disable-next-line no-console
           console.log('Sign Up Unknown Error', error);
-          Alert.alert(UNKNOWN_ERROR_MSG);
+          toast.error("Error Notification !", {
+            position: toast.POSITION.TOP_RIGHT
+          });
           return signUpFailure();
         }
       })

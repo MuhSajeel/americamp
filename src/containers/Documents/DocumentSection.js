@@ -2,7 +2,7 @@
 import React from 'react';
 import { View } from 'react-native';
 import { connect } from 'react-redux';
-import Toast from 'react-native-simple-toast';
+//import Toast from 'react-native-simple-toast';
 import { SubHeading, ViewButton } from '../../components/common';
 import { VIEW_DOCUMENTS_SCREEN } from '../../constants';
 
@@ -53,7 +53,7 @@ const DocumentSection = ({
                           route,
                         })
                     : () => navigate(isApplied ? route : '')
-                  : () => Toast.show('Please Complete its pevious stage first')
+                  : () => //Toast.show('Please Complete its pevious stage first')
               }
               eg={eg}
             >

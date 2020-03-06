@@ -71,17 +71,17 @@ class SignUp extends Component {
     const { first_name, last_name, dialCode, number, password } = this.state;
     const { email, signUp, fetchedUserProfile, formsStatus } = this.props;
     if (!validateEmail(email))
-      return Alert.alert("An error happened", "Please enter a valid email");
+      //return Alert.alert("An error happened", "Please enter a valid email");
     if (!password)
-      return Alert.alert("An error happened", "Please enter a valid password");
+      //return Alert.alert("An error happened", "Please enter a valid password");
     if (!first_name)
-      return Alert.alert("An error happened", "Please enter first name");
+      //return Alert.alert("An error happened", "Please enter first name");
     if (!last_name)
-      return Alert.alert("An error happened", "Please enter last name");
+      //return Alert.alert("An error happened", "Please enter last name");
     const dial = dialCode || "+44";
     const contact_number = `${dial}-${number}`;
     if (dial[0] !== "+" || dial.length < 2)
-      return Alert.alert("Invalid Dial Code!");
+      //return Alert.alert("Invalid Dial Code!");
     if (number.length < 10) return Alert.alert("Invalid Phone Number!");
 
     const user = {

@@ -1,5 +1,5 @@
 /* eslint-disable camelcase */
-import { Alert } from 'react-native';
+ 
 import { switchMap, filter } from 'rxjs/operators';
 
 import { inputChanged as isSavedCardDetails } from '../actions';
@@ -15,7 +15,7 @@ import {
   GET_TRANSACTIONS_SUCCESS,
   FETCH_USER_PROFILE_ON_BOARDING_SUCCESS,
 } from '../../constants';
-import NavigationService from '../../navigator/Navigation';
+//import NavigationService from '../../navigator/Navigation';
 
 export class GetTransactionsEpic {
   static getTransactions = action$ =>
@@ -40,9 +40,9 @@ export class GetTransactionsEpic {
             if (resObj && resObj.success) {
               if (payload.isNavigate) {
                 if (payload.backToDashboard) {
-                  NavigationService.navigate(PAYMENT_TRANSACTIONS, { toDashboard: 'toDashboard' });
+                  //NavigationService.navigate(PAYMENT_TRANSACTIONS, { toDashboard: 'toDashboard' });
                 } else {
-                  NavigationService.navigate(PAYMENT_TRANSACTIONS);
+                  //NavigationService.navigate(PAYMENT_TRANSACTIONS);
                 }
               }
               return isSavedCardDetails(resObj, GET_TRANSACTIONS_SUCCESS);
@@ -61,7 +61,7 @@ export class GetTransactionsEpic {
         } catch (error) {
           // eslint-disable-next-line no-console
           console.log('Sign Up Unknown Error', error);
-          Alert.alert(UNKNOWN_ERROR_MSG);
+          // Alert.alert(UNKNOWN_ERROR_MSG);
           return isSavedCardDetails(payload, GET_TRANSACTIONS_FAILURE);
         }
       })

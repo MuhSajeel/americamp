@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Platform, Alert } from "react-native";
+import { View, Platform } from "react-native";
 import { connect } from "react-redux";
 
 import {

@@ -1,5 +1,5 @@
 /* eslint-disable camelcase */
-import { Alert } from 'react-native';
+ 
 import { switchMap } from 'rxjs/operators';
 import { ofType } from 'redux-observable';
 
@@ -23,31 +23,31 @@ export class ForgotPasswordEpic {
           const { status, data: resObj, problem } = response;
           if (status && status === 200) {
             if (resObj && resObj.success) {
-              Alert.alert(resObj.msg);
+              // Alert.alert(resObj.msg);
               return forgotPasswordSuccess(resObj.data);
             }
-            Alert.alert(NETWORK_ERROR_MSG);
+            // Alert.alert(NETWORK_ERROR_MSG);
             return forgotPasswordFailure();
           }
           if (status && (status === 401 || status === 422 || status === 512)) {
             if (resObj && !resObj.success) {
-              Alert.alert(resObj.msg);
+              // Alert.alert(resObj.msg);
               return forgotPasswordFailure();
             }
-            Alert.alert(NETWORK_ERROR_MSG);
+            // Alert.alert(NETWORK_ERROR_MSG);
             return forgotPasswordFailure();
           }
           if (problem && problem === NETWORK_ERROR_MSG) {
-            Alert.alert(NETWORK_ERROR_MSG);
+            // Alert.alert(NETWORK_ERROR_MSG);
             return forgotPasswordFailure();
           }
-          Alert.alert(ERROR_MSG);
+          // Alert.alert(ERROR_MSG);
 
           return forgotPasswordFailure();
         } catch (error) {
           // eslint-disable-next-line no-console
           console.log('Login Unknown Error', error);
-          Alert.alert(UNKNOWN_ERROR_MSG);
+          // Alert.alert(UNKNOWN_ERROR_MSG);
           return forgotPasswordFailure();
         }
       })
