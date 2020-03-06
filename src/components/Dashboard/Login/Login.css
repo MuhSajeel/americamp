@@ -46,6 +46,9 @@
       background: #2d318a;
       margin-bottom: 40px;
     }
+    .btnlogin:focus{
+      outline: none;
+    }
   
     .btnlogin i{
       margin-top: 7px;

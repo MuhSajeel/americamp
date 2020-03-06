@@ -1,15 +1,14 @@
-
 /* eslint-disable no-unused-vars */
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import HomePage from './components/Dashboard/HomePage/HomePage';
-import CreateAccount from './components/Dashboard/CreateAccount/CreateAccount';
-import Login from './components/Dashboard/Login/Login';
-import LostPassword from './components/Dashboard/LostPassword/LostPassword'
-import SettingsMain from './components/Dashboard/SettingsMain/SettingsMain'
-import TermsandConditions from './components/Dashboard/TermsandConditions/termsandconditions'
-import ResetPassword from './components/Dashboard/ResetPassword/resetpassword'
-import YourApplication from './components/Dashboard/YourApplication/yourapplication'
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import HomePage from "./components/Dashboard/HomePage/HomePage";
+import CreateAccount from "./components/Dashboard/CreateAccount/CreateAccount";
+import Login from "./components/Dashboard/Login/Login";
+import LostPassword from "./components/Dashboard/LostPassword/LostPassword";
+import SettingsMain from "./components/Dashboard/SettingsMain/SettingsMain";
+import TermsandConditions from "./components/Dashboard/TermsandConditions/termsandconditions";
+import ResetPassword from "./components/Dashboard/ResetPassword/resetpassword";
+import YourApplication from "./components/Dashboard/YourApplication/yourapplication";
 
 class RouteViews extends Component {
     render() {
