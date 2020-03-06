@@ -37,6 +37,9 @@
   .homeimage{
    margin-bottom: 80px;
   }
+  .areyouready{
+    margin-bottom: 40px;
+  }
 
   @media screen and (max-width: 767px) {
   .homepage b{

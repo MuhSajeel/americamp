@@ -14,9 +14,11 @@ class HomePage extends Component {
              <HeaderImage />
              <div className="homepage container">
              <div class="row align-items-center">
-                  <div class="col-md-7 col-sm-12">
+                  <div class="col-md-7">
+                      <div class="areyouready">
                       <b className="display-3">Are you ready to start your
                            AmeriCamp adventure?</b>
+                        </div>
                            <Link to="/CreateAccount">
                            <button type="button" class="btn button_cont btnapply">
                                Apply

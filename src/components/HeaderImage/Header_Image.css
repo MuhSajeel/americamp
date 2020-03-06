@@ -8,6 +8,12 @@
     position: relative;
   }
 
+  .welcomepageheading{
+    text-align: center;
+    width: 100%;
+    margin-top:180px;
+  }
+
   .jumbotron{
     height: 630px;
     padding-top: 150px;
@@ -17,7 +23,7 @@
     text-align: center;
     position: relative;
     top: 50%;
-    left: 16%;
+    left: 0%;
     font-size: 100px;
     right:18%;
     transform: translate(-50%, -50%);
@@ -31,6 +37,9 @@
     .jumbotron{
       height: auto;
       padding-top: 150px;
+    }
+    .welcomepageheading{
+      margin-top: 70px;
     }
     .display-2{
       text-align: center;
