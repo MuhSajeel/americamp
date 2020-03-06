@@ -32,44 +32,44 @@ export class SignUpEpic {
           };
           if (status && status === 200) {
             if (resObj && resObj.success) {
-              toast.success("Registered Successfully", {
-                position: toast.POSITION.TOP_RIGHT
+              toast.success(ACCOUNT_CREATE_MSG, {
+                position: toast.POSITION.TOP_CENTER
               });
               return loginAction(userObj);
             }
-            toast.error("Error Notification !", {
-              position: toast.POSITION.TOP_RIGHT
+            toast.error(NETWORK_ERROR_MSG, {
+              position: toast.POSITION.TOP_CENTER
             });
             return signUpFailure();
           }
           if (status && (status === 401 || status === 422 || status === 512)) {
             if (resObj && !resObj.success) {
-              toast.error("Error Notification !", {
-                position: toast.POSITION.TOP_RIGHT
+              toast.error(resObj.msg, {
+                position: toast.POSITION.TOP_CENTER
               });
         
               return signUpFailure()
             }
-            toast.error("Error Notification !", {
-              position: toast.POSITION.TOP_RIGHT
+            toast.error(NETWORK_ERROR_MSG, {
+              position: toast.POSITION.TOP_CENTER
             });
             return signUpFailure();
           }
           if (problem && problem === NETWORK_ERROR_MSG) {
-            toast.error("Error Notification !", {
-              position: toast.POSITION.TOP_RIGHT
+            toast.error(NETWORK_ERROR_MSG, {
+              position: toast.POSITION.TOP_CENTER
             });
             return signUpFailure();
           }
-          toast.error("Error Notification !", {
-            position: toast.POSITION.TOP_RIGHT
+          toast.error(ERROR_MSG, {
+            position: toast.POSITION.TOP_CENTER
           });
           return signUpFailure();
         } catch (error) {
           // eslint-disable-next-line no-console
           console.log('Sign Up Unknown Error', error);
-          toast.error("Error Notification !", {
-            position: toast.POSITION.TOP_RIGHT
+          toast.error(UNKNOWN_ERROR_MSG, {
+            position: toast.POSITION.TOP_CENTER
           });
           return signUpFailure();
         }

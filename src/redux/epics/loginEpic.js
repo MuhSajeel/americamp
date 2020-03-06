@@ -52,6 +52,9 @@ export class LoginEpic {
                 return loginActionSuccess(resObj.data);
               }
               // Alert.alert(NETWORK_ERROR_MSG);
+              toast.error(NETWORK_ERROR_MSG, {
+                position: toast.POSITION.TOP_CENTER
+              });
               return loginActionFailure();
             }
             if (
@@ -59,32 +62,32 @@ export class LoginEpic {
               (status === 401 || status === 422 || status === 512)
             ) {
               if (resObj && !resObj.success) {
-                toast.error("Incorrect email or password!", {
-                  position: toast.POSITION.TOP_RIGHT
+                toast.error(resObj.msg, {
+                  position: toast.POSITION.TOP_CENTER
                 });
                 return loginActionFailure();
               }
-              toast.error("Incorrect email or password!", {
-                position: toast.POSITION.TOP_RIGHT
+              toast.error(NETWORK_ERROR_MSG, {
+                position: toast.POSITION.TOP_CENTER
               });
               return loginActionFailure();
             }
             if (problem && problem === NETWORK_ERROR_MSG) {
-              toast.error("Incorrect email or password!", {
-                position: toast.POSITION.TOP_RIGHT
+              toast.error(NETWORK_ERROR_MSG, {
+                position: toast.POSITION.TOP_CENTER
               });
               return loginActionFailure();
             }
-            toast.error("Incorrect email or password!", {
-              position: toast.POSITION.TOP_RIGHT
+            toast.error(ERROR_MSG, {
+              position: toast.POSITION.TOP_CENTER
             });
 
             return loginActionFailure();
           } catch (error) {
             // eslint-disable-next-line no-console
             console.log("Login Unknown Error", error);
-            toast.error("Incorrect email or password!", {
-              position: toast.POSITION.TOP_RIGHT
+            toast.error(UNKNOWN_ERROR_MSG, {
+              position: toast.POSITION.TOP_CENTER
             });
             return loginActionFailure();
           }
